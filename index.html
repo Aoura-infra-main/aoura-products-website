@@ -558,6 +558,10 @@
   
     /* ── MOBILE OPTIMIZATIONS ── */
     @media (max-width: 768px) {
+      .payment-strip { margin: 0 0 32px 0 !important; }
+      .payment-strip > div { padding: 0 !important; justify-content: center; width: 100%; margin-bottom: 8px; }
+      .footer-copy { text-align: center; justify-content: center; flex-wrap: wrap; line-height: 1.8; }
+
       :root {
         --section-pad: 80px;
       }
@@ -693,7 +697,7 @@
       <div class="section-header reveal" style="text-align:center; max-width:100%; margin-bottom: 40px;">
         <h2 id="location-heading" style="font-size:clamp(2rem,3.5vw,3rem);">Our Location</h2>
       </div>
-      <div class="location-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;">
+      <div class="location-grid" style="align-items: stretch;">
         <div class="reveal" style="padding: 40px; background: var(--grey-100); border-radius: 12px; border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: center;">
           <h3 style="font-family: var(--font-body); font-size: 1.4rem; font-weight: 500; margin-bottom: 16px;">Head Office</h3>
           <p style="font-size: 1rem; line-height: 1.8; color: var(--grey-600); margin-bottom: 32px;">Aoura Products<br/>Al Nahda Second – Al Nahda<br/>Dubai, UAE</p>
@@ -855,7 +859,7 @@
       </div>
 
       <!-- PAYMENT STRIP -->
-      <div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div class="payment-strip" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
         <div style="display:flex;align-items:center;gap:10px;padding-right:24px;">
           <!-- Stripe secure badge -->
           <svg width="44" height="20" viewBox="0 0 44 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Powered by Stripe" style="opacity:0.55">
@@ -902,15 +906,15 @@
         <div style="display:flex;flex-direction:column;gap:8px;width:100%;">
           <p class="footer-copy" style="display:flex;align-items:center;gap:6px;">
             <span>📍</span>
-            <span style="color:var(--grey-400);font-size:0.72rem;letter-spacing:0.05em;">Aoura Products &nbsp;·&nbsp; Al Nahda Second – Al Nahda, Dubai, UAE &nbsp;·&nbsp; <a href="mailto:customer@aouragrp.com" style="color:var(--grey-400);">customer@aouragrp.com</a> &nbsp;·&nbsp; <a href="https://wa.me/+971521503203" style="color:var(--grey-400);">+971 52 150 3203</a></span>
+            <span style="color:var(--grey-400);font-size:0.72rem;letter-spacing:0.05em;">Aoura Products  <span style="opacity:0.3;">|</span>  Al Nahda Second – Al Nahda, Dubai, UAE  <span style="opacity:0.3;">|</span>  <a href="mailto:customer@aouragrp.com" style="color:var(--grey-400);">customer@aouragrp.com</a>  <span style="opacity:0.3;">|</span>  <a href="https://wa.me/+971521503203" style="color:var(--grey-400);">+971 52 150 3203</a></span>
           </p>
           <p class="footer-copy">
-            © 2025 Aoura Products — A Division of Aoura Group, Dubai, UAE &nbsp;·&nbsp;
-            <a href="/about-us.html">About Us</a> &nbsp;·&nbsp;
-            <a href="/contact.html">Contact Us</a> &nbsp;·&nbsp;
-            <a href="/shipping-policy.html">Shipping Policy</a> &nbsp;·&nbsp;
-            <a href="/returns-refunds.html">Returns &amp; Refunds</a> &nbsp;·&nbsp;
-            <a href="/privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+            © 2025 Aoura Products — A Division of Aoura Group, Dubai, UAE  <span style="opacity:0.3;">|</span> 
+            <a href="/about-us.html">About Us</a>  <span style="opacity:0.3;">|</span> 
+            <a href="/contact.html">Contact Us</a>  <span style="opacity:0.3;">|</span> 
+            <a href="/shipping-policy.html">Shipping Policy</a>  <span style="opacity:0.3;">|</span> 
+            <a href="/returns-refunds.html">Returns &amp; Refunds</a>  <span style="opacity:0.3;">|</span> 
+            <a href="/privacy-policy.html">Privacy Policy</a>  <span style="opacity:0.3;">|</span> 
             <a href="/terms-and-conditions.html">Terms &amp; Conditions</a>
           </p>
         </div>
