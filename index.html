@@ -268,16 +268,20 @@
       clip-path: inset(0 100% 0 0);
       transition: clip-path 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .sp-card:hover .sp-action-btn::after {
+    @media (hover: hover) {
+  .sp-card:hover .sp-action-btn::after {
       clip-path: inset(0 0 0 0);
     }
+}
 
 
-    .sp-card:hover {
+    @media (hover: hover) {
+  .sp-card:hover {
       transform: translateY(-8px) scale(1.02);
       border-color: transparent;
       box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0,0,0,0.04);
     }
+}
     .sp-card::after {
       content: "";
       position: absolute;
@@ -288,20 +292,24 @@
       z-index: 1;
       pointer-events: none;
     }
-    .sp-card:hover::after {
+    @media (hover: hover) {
+  .sp-card:hover::after {
       left: 150%;
     }
+}
 
     #star-products { padding: 120px 0; background: var(--white); }
     .sp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
     @media(max-width:900px){ .sp-grid { grid-template-columns: repeat(2,1fr); } }
-    @media(max-width:560px){ .sp-grid { grid-template-columns: 1fr; } }
+    @media(max-width:768px){ .sp-grid { grid-template-columns: 1fr; } }
     
     .sp-card { background: var(--white); border:  1px solid transparent; padding:  24px; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; cursor: pointer; position: relative; text-decoration: none !important; }
     
     .sp-img-wrap { width: 100%; aspect-ratio:  1/1; background:  transparent; overflow: hidden; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
     .sp-img-wrap img, .sp-img-wrap .sp-icon { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-    .sp-card:hover .sp-img-wrap img, .sp-card:hover .sp-img-wrap .sp-icon { transform: scale(1.08); }
+    @media (hover: hover) {
+  .sp-card:hover .sp-img-wrap img, .sp-card:hover .sp-img-wrap .sp-icon { transform: scale(1.08); }
+}
     .sp-card h3 { font-family: var(--font-body); font-size: 1.1rem; font-weight: 500; margin-bottom: 6px; color: var(--black); }
     .sp-cat { font-size: 0.75rem; color: var(--grey-400); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
     .sp-card::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 0; height: 1px; background: var(--black); transition: width 0.4s ease; }
@@ -547,6 +555,26 @@
       .mobile-drawer a { min-height: 48px; display: flex; align-items: center; }
       .cta-primary, .cta-secondary { min-height: 52px; font-size: 0.9rem; }
     }
+  
+    /* ── MOBILE OPTIMIZATIONS ── */
+    @media (max-width: 768px) {
+      :root {
+        --section-pad: 80px;
+      }
+      .sp-card {
+        padding: 24px !important;
+      }
+      section#insights {
+        padding: 80px 20px !important;
+      }
+      .location-grid > div {
+        padding: 28px !important;
+      }
+      .delivery-grid .sp-card {
+        padding: 28px !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -593,7 +621,7 @@
     <div class="hero-bg-text">AOURA PRODUCTS</div>
     <div class="hero-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px;">
       <div class="typewriter-container">
-        <h1 class="typewriter" id="hero-heading" style="font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5.5rem); margin: 0; padding-right: 10px;">Aoura Products</h1>
+        <h1 class="typewriter" id="hero-heading" style="font-family: var(--font-display); font-size: clamp(2rem, 8vw, 5.5rem); margin: 0; padding-right: 10px;">Aoura Products</h1>
       </div>
       <p class="hero-sub">Office Products &bull; Industrial Products &bull; Office Supplies</p>
     </div>
