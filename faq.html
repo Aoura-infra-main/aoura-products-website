@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ & Policies | Aoura Products — Shipping, Returns, Terms & Conditions</title>
+  <meta name="description" content="Aoura Products FAQ — delivery timelines, return policy, terms & conditions, shipping information, and everything you need to know about ordering office supplies in the UAE." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://products.aouragrp.com/faq" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #fafafa;
+      --grey-100: #f4f4f4;
+      --grey-200: #e8e8e8;
+      --grey-400: #9a9a9a;
+      --grey-600: #555;
+      --glass: rgba(255,255,255,0.78);
+      --g200: #e5e5e5;
+      --g500: #777;
+      --border: rgba(0,0,0,0.10);
+      --radius: 14px;
+      --radius-pill: 999px;
+      --nav-h: 72px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      --max-w: 1200px;
+      --section-pad: 80px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    ::selection { background: var(--black); color: var(--white); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; line-height: 1.1; }
+    p { line-height: 1.75; color: var(--grey-600); }
+    a { color: inherit; text-decoration: none; }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+    }
+
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
+    @media(max-width:768px){ .container { padding: 0 20px; } }
+
+    .divider { width: 40px; height: 1px; background: var(--black); margin: 20px 0; }
+
+    /* ── NAVBAR ── */
+    .nav-wrap { position: fixed; top: 16px; left: 0; right: 0; z-index: 999; display: flex; justify-content: center; pointer-events: none; }
+    .nav { pointer-events: auto; width: calc(100% - 40px); max-width: 1200px; height: var(--nav-h); background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid var(--g200); border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.09), 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: center; }
+    .nav-inner { width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; color: var(--black); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { font-size: 0.85rem; color: var(--g500); padding: 8px 14px; border-radius: var(--radius-pill); transition: all 0.22s ease; font-weight: 400; }
+    .nav-links a:hover { background: rgba(0,0,0,0.05); color: var(--black); }
+    .btn-contact { background: var(--black) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: var(--radius-pill) !important; font-weight: 500 !important; font-size: 0.85rem !important; transition: opacity 0.22s, transform 0.22s !important; }
+    .btn-contact:hover { opacity: 0.82 !important; transform: translateY(-1px) !important; }
+    .nav-contact-outline { font-size: 0.85rem; color: var(--g500); padding: 8px 16px; border-radius: var(--radius-pill); border: 1px solid var(--g200); transition: all 0.22s ease; font-weight: 400; }
+    .nav-contact-outline:hover { background: rgba(0,0,0,0.05); color: var(--black); border-color: rgba(0,0,0,0.18); }
+
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--black); transition: transform .3s, opacity .3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .mobile-drawer { display: none; position: fixed; top: calc(16px + var(--nav-h) + 8px); left: 20px; right: 20px; background: rgba(250,250,250,0.97); backdrop-filter: blur(20px); border: 1px solid var(--g200); border-radius: var(--radius); box-shadow: 0 16px 40px rgba(0,0,0,0.12); z-index: 998; padding: 12px 16px 16px; flex-direction: column; gap: 2px; }
+    .mobile-drawer.open { display: flex; }
+    .mobile-drawer a { font-size: 0.95rem; font-weight: 400; color: var(--grey-600); padding: 13px 12px; border-bottom: 1px solid var(--border); display: block; transition: color .2s; border-radius: 8px; }
+    .mobile-drawer a:last-child { border-bottom: none; }
+    .mobile-drawer a.mob-shop { margin-top: 8px; background: var(--black); color: var(--white) !important; border-radius: var(--radius-pill); text-align: center; padding: 14px; font-weight: 500; border: none; }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      background: var(--black);
+      padding: calc(var(--nav-h) + 48px + 40px) 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+    }
+    .page-hero .eyebrow { color: rgba(255,255,255,0.35); }
+    .page-hero h1 { font-size: clamp(2.6rem, 5vw, 5rem); font-weight: 300; color: var(--white); margin: 16px 0 24px; }
+    .page-hero h1 em { font-style: italic; }
+    .page-hero p { color: rgba(255,255,255,0.5); max-width: 600px; font-size: 1rem; }
+
+    .page-hero-tabs {
+      display: flex; gap: 8px; margin-top: 40px; flex-wrap: wrap;
+    }
+    .tab-pill {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.5);
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all .22s;
+      font-family: var(--font-body);
+    }
+    .tab-pill:hover, .tab-pill.active { background: var(--white); color: var(--black); border-color: var(--white); }
+
+    /* ── STICKY SIDEBAR NAV ── */
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 60px;
+      padding: var(--section-pad) 0;
+      align-items: start;
+    }
+    @media(max-width:900px){ .faq-layout { grid-template-columns: 1fr; gap: 0; } }
+
+    .sidebar-nav {
+      position: sticky;
+      top: calc(var(--nav-h) + 32px);
+    }
+    @media(max-width:900px){ .sidebar-nav { display: none; } }
+
+    .sidebar-nav p.eyebrow { margin-bottom: 16px; }
+    .sidebar-nav ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    .sidebar-nav ul li a {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--grey-400);
+      padding: 8px 12px;
+      border-left: 2px solid transparent;
+      transition: all .2s;
+      border-radius: 0 4px 4px 0;
+    }
+    .sidebar-nav ul li a:hover,
+    .sidebar-nav ul li a.active { color: var(--black); border-left-color: var(--black); background: var(--grey-100); }
+
+    /* ── SECTIONS ── */
+    .faq-section { margin-bottom: 72px; }
+    .faq-section:last-child { margin-bottom: 0; }
+
+    .section-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--grey-100);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .section-badge .badge-icon { font-size: 1rem; }
+    .section-badge span { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grey-400); }
+
+    .faq-section h2 { font-size: clamp(1.8rem, 2.8vw, 2.6rem); margin-bottom: 8px; }
+    .faq-section > p { font-size: 0.93rem; color: var(--grey-400); margin-bottom: 32px; max-width: 680px; }
+
+    /* ── ACCORDION ── */
+    .accordion { border: 1px solid var(--border); overflow: hidden; }
+    .accordion-item { border-bottom: 1px solid var(--border); }
+    .accordion-item:last-child { border-bottom: none; }
+
+    .accordion-trigger {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 28px; background: none; border: none; cursor: pointer;
+      text-align: left; gap: 20px; transition: background .2s;
+      font-family: var(--font-body);
+    }
+    .accordion-trigger:hover { background: var(--grey-100); }
+    .accordion-trigger h3 {
+      font-family: var(--font-body);
+      font-size: 0.93rem;
+      font-weight: 500;
+      color: var(--black);
+      line-height: 1.5;
+    }
+    .accordion-icon {
+      width: 28px; height: 28px; border: 1px solid var(--border);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: transform .3s, background .2s, border-color .2s;
+      font-size: 0.85rem; color: var(--grey-400);
+    }
+    .accordion-trigger[aria-expanded="true"] .accordion-icon {
+      transform: rotate(45deg); background: var(--black); border-color: var(--black); color: var(--white);
+    }
+
+    .accordion-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1), padding 0.3s;
+      padding: 0 28px;
+    }
+    .accordion-body.open {
+      max-height: 1000px;
+      padding: 0 28px 28px;
+    }
+    .accordion-body p { font-size: 0.88rem; line-height: 1.8; color: var(--grey-600); margin-bottom: 12px; }
+    .accordion-body p:last-child { margin-bottom: 0; }
+    .accordion-body ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+    .accordion-body ul li {
+      font-size: 0.86rem; color: var(--grey-600); padding-left: 20px; position: relative; line-height: 1.7;
+    }
+    .accordion-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--grey-400); }
+
+    .accordion-body .highlight-box {
+      background: var(--grey-100); border-left: 3px solid var(--black);
+      padding: 14px 18px; margin: 16px 0; border-radius: 0 4px 4px 0;
+      font-size: 0.84rem; color: var(--black); font-weight: 500; line-height: 1.6;
+    }
+    .accordion-body .green-box {
+      background: #f0faf4; border: 1px solid #c3e6cb; border-left: 3px solid #2a9455;
+      padding: 14px 18px; margin: 16px 0; border-radius: 0 4px 4px 0;
+      font-size: 0.84rem; color: #1a6e3c; font-weight: 500; line-height: 1.6;
+    }
+
+    /* ── DELIVERY TABLE SECTION ── */
+    .delivery-table-wrap { border: 1px solid var(--border); overflow: hidden; margin-top: 20px; }
+    .delivery-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .delivery-table-wrap th { background: var(--black); color: var(--white); padding: 14px 20px; text-align: left; font-family: var(--font-body); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .delivery-table-wrap td { padding: 14px 20px; border-bottom: 1px solid var(--border); color: var(--grey-600); vertical-align: middle; }
+    .delivery-table-wrap tr:last-child td { border-bottom: none; }
+    .delivery-table-wrap tr:hover td { background: var(--grey-100); }
+    .badge-fast { background: #f0faf4; color: #1a6e3c; border: 1px solid #c3e6cb; padding: 3px 10px; border-radius: 2px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; white-space: nowrap; }
+    .badge-std { background: var(--grey-100); color: var(--grey-600); border: 1px solid var(--border); padding: 3px 10px; border-radius: 2px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; white-space: nowrap; }
+
+    /* ── TERMS BLOCK ── */
+    .terms-block { border: 1px solid var(--border); padding: 32px; margin-bottom: 2px; }
+    .terms-block:last-child { margin-bottom: 0; }
+    .terms-block h3 { font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .terms-block p { font-size: 0.86rem; color: var(--grey-600); line-height: 1.8; margin-bottom: 10px; }
+    .terms-block p:last-child { margin-bottom: 0; }
+    .terms-block ul { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-top: 8px; }
+    .terms-block ul li { font-size: 0.85rem; color: var(--grey-600); padding-left: 20px; position: relative; line-height: 1.7; }
+    .terms-block ul li::before { content: '—'; position: absolute; left: 0; color: var(--grey-400); }
+    .terms-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 300; color: var(--grey-200); float: right; margin-left: 16px; line-height: 1; }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      background: var(--black); padding: 64px 0; margin-top: var(--section-pad);
+    }
+    .contact-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .contact-strip h2 { font-size: clamp(1.8rem, 2.8vw, 2.6rem); color: var(--white); }
+    .contact-strip p { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin-top: 8px; }
+    .strip-ctas { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .cta-wa { display: inline-flex; align-items: center; gap: 8px; background: #25d366; color: #fff; padding: 13px 24px; border-radius: var(--radius-pill); font-size: 0.85rem; font-weight: 500; transition: opacity .2s; }
+    .cta-wa:hover { opacity: 0.88; }
+    .cta-email { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); padding: 13px 24px; border-radius: var(--radius-pill); font-size: 0.85rem; transition: all .2s; }
+    .cta-email:hover { border-color: rgba(255,255,255,0.55); color: var(--white); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--black); padding: 48px 0 32px; border-top: 1px solid rgba(255,255,255,0.07); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+    .footer-brand { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); }
+    .footer-center { font-size: 0.75rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.28); text-align: center; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.38); letter-spacing: 0.04em; transition: color .2s; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── FLOATING WA ── */
+    .wa-float { display: none; position: fixed; bottom: 22px; right: 20px; z-index: 200; background: #25d366; color: #fff; border-radius: 50px; padding: 13px 20px; font-size: 0.88rem; font-weight: 500; align-items: center; gap: 8px; box-shadow: 0 4px 20px rgba(37,211,102,0.35); text-decoration: none; transition: transform .2s, box-shadow .2s; }
+    .wa-float:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+    .wa-float svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+    /* ── MOBILE ── */
+    @media(max-width:768px){
+      :root { --section-pad: 52px; --nav-h: 64px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .wa-float { display: flex; }
+
+      /* Hero */
+      .page-hero { padding: calc(var(--nav-h) + 32px + 24px) 0 44px; }
+      .page-hero h1 { font-size: 2.4rem; margin: 12px 0 16px; }
+      .page-hero p { font-size: 0.88rem; }
+      .page-hero-tabs { gap: 6px; margin-top: 28px; }
+      .tab-pill { font-size: 0.72rem; padding: 7px 14px; }
+
+      /* FAQ layout */
+      .faq-layout { padding: 40px 0; gap: 0; }
+
+      /* Section headings */
+      .faq-section { margin-bottom: 52px; }
+      .faq-section h2 { font-size: 1.7rem; }
+      .faq-section > p { font-size: 0.85rem; }
+      .section-badge { margin-bottom: 14px; }
+
+      /* Accordion */
+      .accordion-trigger { padding: 16px 18px; gap: 14px; }
+      .accordion-trigger h3 { font-size: 0.88rem; }
+      .accordion-icon { width: 24px; height: 24px; font-size: 0.78rem; flex-shrink: 0; }
+      .accordion-body { padding: 0 18px; }
+      .accordion-body.open { padding: 0 18px 20px; }
+      .accordion-body p { font-size: 0.84rem; }
+      .accordion-body ul li { font-size: 0.83rem; }
+      .accordion-body .highlight-box,
+      .accordion-body .green-box { font-size: 0.82rem; padding: 12px 14px; }
+
+      /* Delivery table — horizontal scroll */
+      .delivery-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .delivery-table-wrap table { min-width: 420px; }
+      .delivery-table-wrap th,
+      .delivery-table-wrap td { padding: 11px 14px; font-size: 0.8rem; }
+
+      /* Terms blocks */
+      .terms-block { padding: 20px 18px; }
+      .terms-block h3 { font-size: 0.78rem; }
+      .terms-block p,
+      .terms-block ul li { font-size: 0.83rem; }
+      .terms-num { font-size: 1.6rem; }
+
+      /* Contact strip */
+      .contact-strip { padding: 48px 0; }
+      .contact-strip-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+      .contact-strip h2 { font-size: 1.7rem; }
+      .strip-ctas { flex-direction: column; width: 100%; }
+      .cta-wa, .cta-email { justify-content: center; width: 100%; padding: 14px 20px; }
+
+      /* Footer */
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+
+    @media(max-width:400px){
+      .page-hero h1 { font-size: 2rem; }
+      .tab-pill { font-size: 0.68rem; padding: 6px 11px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav-wrap">
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Aoura Products Home">
+          <span>Aoura Products</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#star-products">Products</a>
+          <a href="index.html#delivery">Delivery</a>
+          <a href="faq.html" style="color:var(--black);font-weight:500;">FAQ</a>
+          <a href="https://products.aouragrp.com/wp/shop/" class="btn-contact">Shop</a>
+          <a href="index.html#contact" class="nav-contact-outline">Contact</a>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="mobile-drawer" id="mobileDrawer" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html#star-products">Products</a>
+    <a href="index.html#delivery">Delivery</a>
+    <a href="faq.html" style="color:var(--black);font-weight:500;">FAQ & Policies</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="https://products.aouragrp.com/wp/shop/" class="mob-shop">Browse Shop →</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Help Centre</p>
+      <h1>FAQ & <em>Policies</em></h1>
+      <p>Everything you need to know — delivery timelines, returns, terms & conditions, and how we operate. Clear answers, no small print.</p>
+      <div class="page-hero-tabs">
+        <a href="#shipping" class="tab-pill">Shipping & Delivery</a>
+        <a href="#returns" class="tab-pill">Returns & Refunds</a>
+        <a href="#ordering" class="tab-pill">Ordering</a>
+        <a href="#payments" class="tab-pill">Payments</a>
+        <a href="#terms" class="tab-pill">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="faq-layout">
+
+      <!-- SIDEBAR NAV -->
+      <aside class="sidebar-nav" aria-label="Section navigation">
+        <p class="eyebrow">On This Page</p>
+        <ul>
+          <li><a href="#shipping">Shipping & Delivery</a></li>
+          <li><a href="#returns">Returns & Refunds</a></li>
+          <li><a href="#ordering">Ordering & Products</a></li>
+          <li><a href="#payments">Payments & Invoicing</a></li>
+          <li><a href="#quality">Quality & Warranty</a></li>
+          <li><a href="#terms">Terms & Conditions</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+      </aside>
+
+      <!-- FAQ CONTENT -->
+      <main>
+
+        <!-- ── SHIPPING ── -->
+        <section class="faq-section reveal" id="shipping">
+          <div class="section-badge"><span class="badge-icon">🚚</span><span>Shipping & Delivery</span></div>
+          <h2>Shipping & Delivery</h2>
+          <p>We dispatch fast and deliver reliably across the entire UAE — with contracted carrier partners ensuring your orders arrive on schedule.</p>
+
+          <div class="accordion" role="list">
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>How long does dispatch take after I place an order?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <div class="green-box">✅ Standard dispatch is within 1–2 business days of order confirmation.</div>
+                <p>Most orders placed before 2:00 PM (UAE time) on a business day are dispatched the same day or the following morning. Orders placed after 2:00 PM, or on weekends and public holidays, are dispatched the next business day.</p>
+                <p>In the unlikely event of an unforeseen delay — such as high-volume periods, logistics disruptions, or supply issues — we will notify you promptly by WhatsApp or email with a revised timeline.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What are the delivery timelines across the UAE?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We deliver UAE-wide through our contracted shipping partners. Estimated delivery times from dispatch date:</p>
+                <div class="delivery-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Emirate</th>
+                        <th>Estimated Delivery</th>
+                        <th>Service Level</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>Dubai</strong></td><td>Same day – Next day</td><td><span class="badge-fast">Priority</span></td></tr>
+                      <tr><td><strong>Sharjah</strong></td><td>Next day (Warehouse in Sajjah)</td><td><span class="badge-fast">Priority</span></td></tr>
+                      <tr><td><strong>Abu Dhabi</strong></td><td>1–2 business days</td><td><span class="badge-std">Standard</span></td></tr>
+                      <tr><td><strong>Ajman</strong></td><td>1–2 business days</td><td><span class="badge-std">Standard</span></td></tr>
+                      <tr><td><strong>Ras Al Khaimah</strong></td><td>1–2 business days</td><td><span class="badge-std">Standard</span></td></tr>
+                      <tr><td><strong>Umm Al Quwain</strong></td><td>1–2 business days</td><td><span class="badge-std">Standard</span></td></tr>
+                      <tr><td><strong>Fujairah</strong></td><td>1–3 business days</td><td><span class="badge-std">Standard</span></td></tr>
+                      <tr><td><strong>International</strong></td><td>Contact us for quote</td><td><span class="badge-std">Export</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p style="margin-top:14px;">Delivery times are estimates and subject to carrier schedules. Public holidays may add 1 additional business day.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Which shipping carriers do you use?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We work with contracted, vetted logistics and courier partners across the UAE to ensure consistent, trackable, and timely delivery. Our carrier relationships are managed at the business level to maintain service standards.</p>
+                <p>Where applicable, you will receive tracking information once your order is dispatched. For B2B and bulk orders, our team coordinates delivery scheduling directly with you.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Is there free delivery? What's the minimum order threshold?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <div class="green-box">🎁 Free delivery on retail orders over AED 400 within Dubai.</div>
+                <p>For orders below AED 400, or for deliveries outside Dubai, a delivery fee applies. The exact fee depends on your emirate, order size, and weight. Contact us for a delivery quote on large or multi-location orders.</p>
+                <p>B2B and wholesale accounts may have separate delivery terms agreed upon at account setup. Speak to our sales team for details.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Do you ship internationally?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Yes — Aoura Products offers international export to select countries. International shipping is handled on a case-by-case basis and pricing depends on destination, order volume, and current freight rates.</p>
+                <p>Please contact us via WhatsApp or email to discuss international export requirements. We will provide a formal quotation including shipping costs, estimated lead times, and applicable documentation.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item" role="listitem">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What happens if there's an unexpected delay?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We take delivery commitments seriously. In the event of an unlikely delay — whether due to stock availability, logistics disruption, or force majeure — we will:</p>
+                <ul>
+                  <li>Notify you proactively via WhatsApp or email as soon as we become aware</li>
+                  <li>Provide a revised, realistic dispatch and delivery estimate</li>
+                  <li>Offer alternatives where possible (partial fulfilment, substitute products)</li>
+                  <li>Escalate with our carrier partner to prioritise your order</li>
+                </ul>
+                <p>We do not charge for delayed orders and will work to make it right.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ── RETURNS ── -->
+        <section class="faq-section reveal" id="returns">
+          <div class="section-badge"><span class="badge-icon">↩️</span><span>Returns & Refunds</span></div>
+          <h2>Returns & Refunds</h2>
+          <p>We stand behind every product we sell. Our return policy is designed to be simple, fair, and hassle-free.</p>
+
+          <div class="accordion">
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What is your return policy?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <div class="green-box">✅ 7-Day No-Questions-Asked Return Policy on all eligible products.</div>
+                <p>If you're not satisfied with your purchase for any reason, you may return it within <strong>7 calendar days</strong> of receiving your order — no questions asked.</p>
+                <p>Depending on the item and its condition, we will offer one of the following resolutions:</p>
+                <ul>
+                  <li><strong>Full Refund</strong> — Returned to your original payment method</li>
+                  <li><strong>In-Store Credit</strong> — Applied to your Aoura Products account for future orders</li>
+                  <li><strong>Exchange</strong> — Swap for the same item or an equivalent alternative</li>
+                </ul>
+                <p>Our team will advise on the most appropriate resolution based on the item type and reason for return.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>How do I initiate a return?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Initiating a return is straightforward. Simply contact us within 7 days of receiving your order through any of the following channels:</p>
+                <ul>
+                  <li>WhatsApp: +971 52 150 3203 (fastest response)</li>
+                  <li>Email: customer@aouragrp.com</li>
+                </ul>
+                <p>Please include your order reference number and a brief description of the issue. You do not need to justify the return — simply let us know you'd like to proceed, and our team will arrange collection or advise on how to return the item.</p>
+                <div class="highlight-box">Returns must be initiated within 7 calendar days of delivery. Items returned after this window may be assessed on a case-by-case basis.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What condition must items be in for a return?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>For the smoothest return experience, items should ideally be returned in their original packaging and unused condition. However, we understand that sometimes you need to try a product before deciding.</p>
+                <p>Items that are eligible for return:</p>
+                <ul>
+                  <li>Unused or lightly used products in resalable condition</li>
+                  <li>Defective or damaged items (received in poor condition)</li>
+                  <li>Incorrectly shipped products (wrong item sent)</li>
+                  <li>Items that do not match their description</li>
+                </ul>
+                <p>Items that are <em>not</em> eligible for return:</p>
+                <ul>
+                  <li>Consumables that have been fully opened and used (e.g. ink cartridges, coffee capsules)</li>
+                  <li>Custom or bespoke orders</li>
+                  <li>Items damaged due to misuse or improper storage after delivery</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>How long do refunds take to process?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Once we receive and inspect the returned item, refunds are typically processed within <strong>3–5 business days</strong>. The time for the refund to appear in your account depends on your bank or payment method:</p>
+                <ul>
+                  <li>Bank transfer / credit card: 3–7 business days (bank processing times vary)</li>
+                  <li>In-store credit: Applied immediately upon return approval</li>
+                </ul>
+                <p>You will receive a confirmation message once your refund has been initiated.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>I received a damaged or incorrect item — what do I do?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We sincerely apologise if this has occurred. Please contact us immediately via WhatsApp with a photo of the item and your order reference. We will:</p>
+                <ul>
+                  <li>Arrange an immediate replacement or full refund — your choice</li>
+                  <li>Organise collection of the incorrect/damaged item at no cost to you</li>
+                  <li>Investigate and improve our fulfilment process</li>
+                </ul>
+                <div class="highlight-box">Quality issues are handled with priority. You will not bear any costs for our errors.</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ── ORDERING ── -->
+        <section class="faq-section reveal" id="ordering">
+          <div class="section-badge"><span class="badge-icon">🛒</span><span>Ordering & Products</span></div>
+          <h2>Ordering & Products</h2>
+          <p>Questions about placing orders, product availability, and how we work with businesses.</p>
+
+          <div class="accordion">
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>How do I place an order?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>You can place an order through several channels:</p>
+                <ul>
+                  <li><strong>Online Shop</strong> — Browse and order at products.aouragrp.com/wp/shop/</li>
+                  <li><strong>WhatsApp</strong> — Send your list to +971 52 150 3203 for a quick quote</li>
+                  <li><strong>Email</strong> — Send your order or product list to customer@aouragrp.com</li>
+                </ul>
+                <p>For B2B clients, WhatsApp or email is usually the fastest route. Most quotes are returned within 2–4 hours during business hours.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Do you have a minimum order quantity?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>There is no minimum order quantity for retail purchases via our online store. For B2B wholesale pricing, minimum quantities may apply per product category.</p>
+                <p>Contact our sales team for bulk pricing tiers and wholesale account setup. We work with businesses of all sizes across the UAE.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What if the product I need is out of stock?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We maintain healthy stock levels across all our product categories. In the event an item is temporarily out of stock, our team will:</p>
+                <ul>
+                  <li>Provide an estimated restock date</li>
+                  <li>Suggest equivalent alternatives that meet your requirements</li>
+                  <li>Accept backorders for B2B clients with confirmed timelines</li>
+                </ul>
+                <p>Reach out via WhatsApp for the most current stock availability before placing a large order.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Can I modify or cancel an order after placing it?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Yes, orders can be modified or cancelled provided they have not yet been dispatched. Contact us as soon as possible via WhatsApp or phone to request a change.</p>
+                <p>Once an order has been dispatched, it cannot be cancelled but you may initiate a return upon delivery under our 7-day return policy.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ── PAYMENTS ── -->
+        <section class="faq-section reveal" id="payments">
+          <div class="section-badge"><span class="badge-icon">💳</span><span>Payments & Invoicing</span></div>
+          <h2>Payments & Invoicing</h2>
+          <p>Transparent pricing, flexible payment options, and proper documentation for business accounts.</p>
+
+          <div class="accordion">
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What payment methods do you accept?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>We accept the following payment methods:</p>
+                <ul>
+                  <li>Bank transfer (UAE local bank accounts)</li>
+                  <li>Credit & debit card (via secure online checkout)</li>
+                  <li>Cash on delivery (COD) — available for select orders in Dubai</li>
+                  <li>Corporate/business cheque (for approved B2B accounts)</li>
+                </ul>
+                <p>Payment terms for wholesale and B2B clients can be discussed with our sales team. Net 30 terms may be available for established accounts.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Do you provide VAT invoices?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Yes. Aoura Products is VAT-registered in the UAE. A VAT-compliant tax invoice is issued for every order, suitable for business expense claims and accounting purposes.</p>
+                <p>If you require the invoice in a specific format or addressed to a company entity, please inform us at the time of ordering.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Are your prices inclusive or exclusive of VAT?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Prices displayed on our website and quoted via WhatsApp/email are typically exclusive of VAT unless stated otherwise. VAT at the standard UAE rate of 5% will be added at checkout or on the final invoice.</p>
+                <p>For B2B accounts, all quotes will clearly indicate whether VAT is included or to be applied separately.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ── QUALITY ── -->
+        <section class="faq-section reveal" id="quality">
+          <div class="section-badge"><span class="badge-icon">⭐</span><span>Quality & Warranty</span></div>
+          <h2>Quality & Warranty</h2>
+          <p>We supply genuine, brand-name products sourced through authorised channels.</p>
+
+          <div class="accordion">
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>Are all your products genuine and brand-authorised?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <p>Yes. All products sold by Aoura Products are genuine, brand-name items sourced through authorised distributors and supply chains. We do not deal in counterfeit or grey-market goods.</p>
+                <p>Our catalogue includes internationally recognised brands such as Faber-Castell, Uni-Ball, HP, Epson, Canon, Nespresso, Dolce Gusto, Philips, BLACK+DECKER, and more.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <h3>What happens if a product is defective or fails prematurely?</h3>
+                <div class="accordion-icon">+</div>
+              </button>
+              <div class="accordion-body">
+                <div class="green-box">✅ Any quality issue will be promptly resolved — no delay, no hassle.</div>
+                <p>If a product is found to be defective, fails within normal use, or does not match its description, contact us immediately. We will:</p>
+                <ul>
+                  <li>Arrange a replacement at no charge</li>
+                  <li>Issue a full refund if preferred</li>
+                  <li>Escalate to the manufacturer where a warranty claim applies</li>
+                </ul>
+                <p>Manufacturer warranties apply to applicable products (printers, cleaning equipment, etc.) as per the brand's standard terms. We assist in the warranty process on your behalf.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ── TERMS ── -->
+        <section class="faq-section reveal" id="terms">
+          <div class="section-badge"><span class="badge-icon">📋</span><span>Terms & Conditions</span></div>
+          <h2>Terms & Conditions</h2>
+          <p>By placing an order with Aoura Products, you agree to the following terms. Last updated: January 2025.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">01</span>
+            <h3>General</h3>
+            <p>These Terms & Conditions govern all purchases made from Aoura Products, a division of Aoura Group, registered in Dubai, UAE. By placing an order — whether through our website, WhatsApp, or email — you confirm that you have read, understood, and agree to these terms.</p>
+            <p>Aoura Products reserves the right to update these terms at any time. Continued use of our services constitutes acceptance of the current terms.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">02</span>
+            <h3>Orders & Acceptance</h3>
+            <ul>
+              <li>All orders are subject to availability and acceptance by Aoura Products.</li>
+              <li>An order is confirmed only upon receipt of written confirmation (WhatsApp, email, or invoice) from our team.</li>
+              <li>We reserve the right to refuse or cancel an order at any time prior to dispatch, with a full refund issued if payment has been made.</li>
+              <li>Pricing is subject to change without prior notice; the price at time of order confirmation is binding.</li>
+              <li>Orders may be modified or cancelled by the customer prior to dispatch by contacting us directly.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">03</span>
+            <h3>Shipping & Delivery</h3>
+            <ul>
+              <li>Standard dispatch is within 1–2 business days. Estimated delivery timelines are provided as guidance and are not guaranteed.</li>
+              <li>Delivery timelines may be affected by factors outside our control, including carrier delays, public holidays, or force majeure events.</li>
+              <li>Risk of loss or damage transfers to the customer upon delivery to the specified address.</li>
+              <li>Aoura Products is not liable for delays caused by incorrect or incomplete delivery addresses provided by the customer.</li>
+              <li>Free delivery applies to qualifying retail orders within Dubai as per current thresholds (currently AED 400+).</li>
+              <li>International export is available; terms, costs, and timelines are agreed upon individually.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">04</span>
+            <h3>Returns & Refunds</h3>
+            <ul>
+              <li>Customers may return eligible items within 7 calendar days of delivery — no reason required.</li>
+              <li>Refunds will be issued to the original payment method or as in-store credit, at our discretion and in consultation with the customer.</li>
+              <li>Items must be in a condition suitable for resale unless defective. Opened consumables (ink, coffee capsules, etc.) are non-returnable unless defective.</li>
+              <li>Custom or bespoke orders are non-refundable unless defective or incorrectly supplied.</li>
+              <li>Aoura Products reserves the right to assess returns on a case-by-case basis outside the standard 7-day window.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">05</span>
+            <h3>Pricing, VAT & Payments</h3>
+            <ul>
+              <li>All prices are in UAE Dirhams (AED) and are exclusive of VAT unless stated.</li>
+              <li>VAT at 5% is applied in compliance with UAE Federal Tax Authority requirements.</li>
+              <li>Payment is due at the time of order unless credit terms have been agreed in writing.</li>
+              <li>Aoura Products reserves the right to withhold order fulfilment in the event of outstanding unpaid invoices.</li>
+              <li>All payments are processed securely. Aoura Products does not store card details.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">06</span>
+            <h3>Product Information & Availability</h3>
+            <ul>
+              <li>We make every effort to ensure product descriptions, images, and specifications are accurate. Minor variations may exist.</li>
+              <li>Product availability is subject to stock levels and supplier availability without prior notice.</li>
+              <li>Where a specific brand or model is unavailable, we may suggest an equivalent alternative. Orders are not fulfilled with substitutes without customer approval.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">07</span>
+            <h3>Limitation of Liability</h3>
+            <ul>
+              <li>Aoura Products' liability is limited to the value of the goods ordered in any transaction.</li>
+              <li>We are not liable for indirect, consequential, or incidental losses arising from delays, product defects, or non-delivery beyond our reasonable control.</li>
+              <li>Nothing in these terms limits liability for death, personal injury, or fraud.</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">08</span>
+            <h3>Intellectual Property</h3>
+            <p>All content on the Aoura Products website — including text, images, branding, and design — is the property of Aoura Group. Reproduction or redistribution without prior written consent is prohibited.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">09</span>
+            <h3>Governing Law</h3>
+            <p>These Terms & Conditions are governed by and construed in accordance with the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the courts of Dubai, UAE.</p>
+          </div>
+        </section>
+
+        <!-- ── PRIVACY ── -->
+        <section class="faq-section reveal" id="privacy">
+          <div class="section-badge"><span class="badge-icon">🔒</span><span>Privacy Policy</span></div>
+          <h2>Privacy Policy</h2>
+          <p>We handle your personal information with care and in compliance with UAE data protection regulations.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Data We Collect</h3>
+            <ul>
+              <li>Name, company name, and contact information (phone, email, address)</li>
+              <li>Order history and transaction records</li>
+              <li>Communication records (WhatsApp messages, emails)</li>
+              <li>Website usage data (cookies, analytics)</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>How We Use Your Data</h3>
+            <ul>
+              <li>To process and fulfil your orders</li>
+              <li>To communicate about your orders, quotes, and account</li>
+              <li>To send relevant product updates or offers (you may opt out at any time)</li>
+              <li>To comply with UAE legal and tax obligations</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Data Sharing & Retention</h3>
+            <p>We do not sell, rent, or trade your personal data to third parties. Data may be shared with contracted logistics partners solely for delivery purposes. We retain data for the period required by UAE law and legitimate business purposes.</p>
+            <p>To request data access, correction, or deletion, contact us at customer@aouragrp.com.</p>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <div class="container">
+      <div class="contact-strip-inner">
+        <div>
+          <h2>Still Have Questions?</h2>
+          <p>Our team responds within 2–4 hours on WhatsApp — usually faster.</p>
+        </div>
+        <div class="strip-ctas">
+          <a href="https://wa.me/+971521503203" class="cta-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="mailto:customer@aouragrp.com" class="cta-email">✉ customer@aouragrp.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Aoura Products</div>
+        <div class="footer-center">
+          © 2025 Aoura Products — A Division of Aoura Group, Dubai, UAE<br/>
+          <span style="opacity:.45">products.aouragrp.com</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://aouragrp.com" target="_blank" rel="noopener">Aoura Group</a>
+          <a href="https://products.aouragrp.com/wp/shop/">Shop</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/+971521503203" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp us">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Us
+  </a>
+
+  <script>
+  (function () {
+    'use strict';
+
+    // Accordion
+    document.querySelectorAll('.accordion-trigger').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        // Close all in same accordion
+        var accordion = this.closest('.accordion');
+        accordion.querySelectorAll('.accordion-trigger').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          b.nextElementSibling.classList.remove('open');
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          this.nextElementSibling.classList.add('open');
+        }
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (!target) return;
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+    });
+
+    // Reveal on scroll
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+    // Sidebar active state
+    var sections = document.querySelectorAll('section[id], .faq-section[id]');
+    var sideLinks = document.querySelectorAll('.sidebar-nav a');
+    window.addEventListener('scroll', function() {
+      var scrollY = window.scrollY + 120;
+      sections.forEach(function(sec) {
+        if (sec.offsetTop <= scrollY && sec.offsetTop + sec.offsetHeight > scrollY) {
+          sideLinks.forEach(function(a) { a.classList.remove('active'); });
+          var match = document.querySelector('.sidebar-nav a[href="#' + sec.id + '"]');
+          if (match) match.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // Mobile nav
+    var hamburger = document.getElementById('hamburger');
+    var drawer = document.getElementById('mobileDrawer');
+    hamburger.addEventListener('click', function() {
+      var open = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Tab pill active on hero
+    document.querySelectorAll('.tab-pill').forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('.tab-pill').forEach(function(p) { p.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

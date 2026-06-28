@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Aoura Products — How We Handle Your Data</title>
+  <meta name="description" content="Aoura Products Privacy Policy — how we collect, use, store, and protect your personal data in accordance with UAE law." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://products.aouragrp.com/privacy-policy" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #fafafa;
+      --grey-100: #f4f4f4;
+      --grey-200: #e8e8e8;
+      --grey-400: #9a9a9a;
+      --grey-600: #555;
+      --glass: rgba(255,255,255,0.78);
+      --g200: #e5e5e5;
+      --g500: #777;
+      --border: rgba(0,0,0,0.10);
+      --radius: 14px;
+      --radius-pill: 999px;
+      --nav-h: 72px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+      --max-w: 1200px;
+      --section-pad: 80px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    ::selection { background: var(--black); color: var(--white); }
+    h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; line-height: 1.1; }
+    p { line-height: 1.75; color: var(--grey-600); }
+    a { color: inherit; text-decoration: none; }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+    }
+
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
+    @media(max-width:768px){ .container { padding: 0 20px; } }
+
+    .divider { width: 40px; height: 1px; background: var(--black); margin: 20px 0; }
+
+    /* ── NAVBAR ── */
+    .nav-wrap { position: fixed; top: 16px; left: 0; right: 0; z-index: 999; display: flex; justify-content: center; pointer-events: none; }
+    .nav { pointer-events: auto; width: calc(100% - 40px); max-width: 1200px; height: var(--nav-h); background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid var(--g200); border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.09), 0 2px 8px rgba(0,0,0,0.05); display: flex; align-items: center; }
+    .nav-inner { width: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; color: var(--black); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { font-size: 0.85rem; color: var(--g500); padding: 8px 14px; border-radius: var(--radius-pill); transition: all 0.22s ease; font-weight: 400; }
+    .nav-links a:hover { background: rgba(0,0,0,0.05); color: var(--black); }
+    .btn-contact { background: var(--black) !important; color: var(--white) !important; padding: 9px 20px !important; border-radius: var(--radius-pill) !important; font-weight: 500 !important; font-size: 0.85rem !important; transition: opacity 0.22s, transform 0.22s !important; }
+    .btn-contact:hover { opacity: 0.82 !important; transform: translateY(-1px) !important; }
+    .nav-contact-outline { font-size: 0.85rem; color: var(--g500); padding: 8px 16px; border-radius: var(--radius-pill); border: 1px solid var(--g200); transition: all 0.22s ease; font-weight: 400; }
+    .nav-contact-outline:hover { background: rgba(0,0,0,0.05); color: var(--black); border-color: rgba(0,0,0,0.18); }
+
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--black); transition: transform .3s, opacity .3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .mobile-drawer { display: none; position: fixed; top: calc(16px + var(--nav-h) + 8px); left: 20px; right: 20px; background: rgba(250,250,250,0.97); backdrop-filter: blur(20px); border: 1px solid var(--g200); border-radius: var(--radius); box-shadow: 0 16px 40px rgba(0,0,0,0.12); z-index: 998; padding: 12px 16px 16px; flex-direction: column; gap: 2px; }
+    .mobile-drawer.open { display: flex; }
+    .mobile-drawer a { font-size: 0.95rem; font-weight: 400; color: var(--grey-600); padding: 13px 12px; border-bottom: 1px solid var(--border); display: block; transition: color .2s; border-radius: 8px; }
+    .mobile-drawer a:last-child { border-bottom: none; }
+    .mobile-drawer a.mob-shop { margin-top: 8px; background: var(--black); color: var(--white) !important; border-radius: var(--radius-pill); text-align: center; padding: 14px; font-weight: 500; border: none; }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      background: var(--black);
+      padding: calc(var(--nav-h) + 48px + 40px) 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+    }
+    .page-hero .eyebrow { color: rgba(255,255,255,0.35); }
+    .page-hero h1 { font-size: clamp(2.6rem, 5vw, 5rem); font-weight: 300; color: var(--white); margin: 16px 0 24px; }
+    .page-hero h1 em { font-style: italic; }
+    .page-hero p { color: rgba(255,255,255,0.5); max-width: 600px; font-size: 1rem; }
+
+    .page-hero-tabs {
+      display: flex; gap: 8px; margin-top: 40px; flex-wrap: wrap;
+    }
+    .tab-pill {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.5);
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all .22s;
+      font-family: var(--font-body);
+    }
+    .tab-pill:hover, .tab-pill.active { background: var(--white); color: var(--black); border-color: var(--white); }
+
+    /* ── STICKY SIDEBAR NAV ── */
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 60px;
+      padding: var(--section-pad) 0;
+      align-items: start;
+    }
+    @media(max-width:900px){ .policy-layout { grid-template-columns: 1fr; gap: 0; } }
+
+    .sidebar-nav {
+      position: sticky;
+      top: calc(var(--nav-h) + 32px);
+    }
+    @media(max-width:900px){ .sidebar-nav { display: none; } }
+
+    .sidebar-nav p.eyebrow { margin-bottom: 16px; }
+    .sidebar-nav ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    .sidebar-nav ul li a {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--grey-400);
+      padding: 8px 12px;
+      border-left: 2px solid transparent;
+      transition: all .2s;
+      border-radius: 0 4px 4px 0;
+    }
+    .sidebar-nav ul li a:hover,
+    .sidebar-nav ul li a.active { color: var(--black); border-left-color: var(--black); background: var(--grey-100); }
+
+    /* ── SECTIONS ── */
+    .policy-section { margin-bottom: 72px; }
+    .policy-section:last-child { margin-bottom: 0; }
+
+    .section-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--grey-100);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .section-badge .badge-icon { font-size: 1rem; }
+    .section-badge span { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grey-400); }
+
+    .policy-section h2 { font-size: clamp(1.8rem, 2.8vw, 2.6rem); margin-bottom: 8px; }
+    .policy-section > p { font-size: 0.93rem; color: var(--grey-400); margin-bottom: 32px; max-width: 680px; }
+
+    /* ── TERMS BLOCK (reused for policy blocks) ── */
+    .terms-block { border: 1px solid var(--border); padding: 32px; margin-bottom: 2px; }
+    .terms-block:last-child { margin-bottom: 0; }
+    .terms-block h3 { font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .terms-block p { font-size: 0.86rem; color: var(--grey-600); line-height: 1.8; margin-bottom: 10px; }
+    .terms-block p:last-child { margin-bottom: 0; }
+    .terms-block ul { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-top: 8px; }
+    .terms-block ul li { font-size: 0.85rem; color: var(--grey-600); padding-left: 20px; position: relative; line-height: 1.7; }
+    .terms-block ul li::before { content: '—'; position: absolute; left: 0; color: var(--grey-400); }
+    .terms-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 300; color: var(--grey-200); float: right; margin-left: 16px; line-height: 1; }
+
+    /* ── HIGHLIGHT BOXES ── */
+    .highlight-box {
+      background: var(--grey-100); border-left: 3px solid var(--black);
+      padding: 14px 18px; margin: 16px 0; border-radius: 0 4px 4px 0;
+      font-size: 0.84rem; color: var(--black); font-weight: 500; line-height: 1.6;
+    }
+    .green-box {
+      background: #f0faf4; border: 1px solid #c3e6cb; border-left: 3px solid #2a9455;
+      padding: 14px 18px; margin: 16px 0; border-radius: 0 4px 4px 0;
+      font-size: 0.84rem; color: #1a6e3c; font-weight: 500; line-height: 1.6;
+    }
+
+    /* ── LAST UPDATED BANNER ── */
+    .last-updated-bar {
+      background: var(--grey-100);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 14px 20px;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: var(--grey-400);
+    }
+    .last-updated-bar strong { color: var(--black); }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      background: var(--black); padding: 64px 0; margin-top: var(--section-pad);
+    }
+    .contact-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .contact-strip h2 { font-size: clamp(1.8rem, 2.8vw, 2.6rem); color: var(--white); }
+    .contact-strip p { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin-top: 8px; }
+    .strip-ctas { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+    .cta-wa { display: inline-flex; align-items: center; gap: 8px; background: #25d366; color: #fff; padding: 13px 24px; border-radius: var(--radius-pill); font-size: 0.85rem; font-weight: 500; transition: opacity .2s; }
+    .cta-wa:hover { opacity: 0.88; }
+    .cta-email { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); padding: 13px 24px; border-radius: var(--radius-pill); font-size: 0.85rem; transition: all .2s; }
+    .cta-email:hover { border-color: rgba(255,255,255,0.55); color: var(--white); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--black); padding: 56px 0 32px; border-top: 1px solid rgba(255,255,255,0.07); }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    @media(max-width:768px){ .footer-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+    .footer-brand-block { }
+    .footer-brand { font-family: var(--font-display); font-size: 1.4rem; color: var(--white); margin-bottom: 10px; display: block; }
+    .footer-tagline { font-size: 0.8rem; color: rgba(255,255,255,0.35); line-height: 1.7; max-width: 280px; }
+
+    .footer-col-title { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 16px; }
+    .footer-col-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col-links a { font-size: 0.8rem; color: rgba(255,255,255,0.45); letter-spacing: 0.03em; transition: color .2s; }
+    .footer-col-links a:hover { color: var(--white); }
+
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 0.72rem; letter-spacing: 0.06em; color: rgba(255,255,255,0.22); }
+    .footer-copy a { color: rgba(255,255,255,0.3); transition: color .2s; }
+    .footer-copy a:hover { color: rgba(255,255,255,0.6); }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── FLOATING WA ── */
+    .wa-float { display: none; position: fixed; bottom: 22px; right: 20px; z-index: 200; background: #25d366; color: #fff; border-radius: 50px; padding: 13px 20px; font-size: 0.88rem; font-weight: 500; align-items: center; gap: 8px; box-shadow: 0 4px 20px rgba(37,211,102,0.35); text-decoration: none; transition: transform .2s, box-shadow .2s; }
+    .wa-float:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+    .wa-float svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+    /* ── MOBILE ── */
+    @media(max-width:768px){
+      :root { --section-pad: 52px; --nav-h: 64px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .wa-float { display: flex; }
+
+      .page-hero { padding: calc(var(--nav-h) + 32px + 24px) 0 44px; }
+      .page-hero h1 { font-size: 2.4rem; margin: 12px 0 16px; }
+      .page-hero p { font-size: 0.88rem; }
+      .page-hero-tabs { gap: 6px; margin-top: 28px; }
+      .tab-pill { font-size: 0.72rem; padding: 7px 14px; }
+
+      .policy-layout { padding: 40px 0; gap: 0; }
+      .policy-section { margin-bottom: 52px; }
+      .policy-section h2 { font-size: 1.7rem; }
+      .policy-section > p { font-size: 0.85rem; }
+
+      .terms-block { padding: 20px 18px; }
+      .terms-block h3 { font-size: 0.78rem; }
+      .terms-block p, .terms-block ul li { font-size: 0.83rem; }
+      .terms-num { font-size: 1.6rem; }
+
+      .contact-strip { padding: 48px 0; }
+      .contact-strip-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+      .contact-strip h2 { font-size: 1.7rem; }
+      .strip-ctas { flex-direction: column; width: 100%; }
+      .cta-wa, .cta-email { justify-content: center; width: 100%; padding: 14px 20px; }
+
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media(max-width:400px){
+      .page-hero h1 { font-size: 2rem; }
+      .tab-pill { font-size: 0.68rem; padding: 6px 11px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav-wrap">
+    <nav class="nav" aria-label="Main Navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Aoura Products Home">
+          <span>Aoura Products</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#star-products">Products</a>
+          <a href="index.html#delivery">Delivery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="https://products.aouragrp.com/wp/shop/" class="btn-contact">Shop</a>
+          <a href="https://products.aouragrp.com/index.html#:~:text=Shop-,Contact,-Dubai%27s%20One%2DStop" class="nav-contact-outline">Contact</a>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="mobile-drawer" id="mobileDrawer" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html#star-products">Products</a>
+    <a href="index.html#delivery">Delivery</a>
+    <a href="faq.html">FAQ & Policies</a>
+    <a href="https://products.aouragrp.com/index.html#:~:text=Shop-,Contact,-Dubai%27s%20One%2DStop">Contact</a>
+    <a href="https://products.aouragrp.com/wp/shop/" class="mob-shop">Browse Shop →</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Legal & Compliance</p>
+      <h1>Privacy <em>Policy</em></h1>
+      <p>How we collect, use, and protect your personal information — written plainly so you actually understand it.</p>
+      <div class="page-hero-tabs">
+        <a href="#what-we-collect" class="tab-pill">What We Collect</a>
+        <a href="#how-we-use" class="tab-pill">How We Use It</a>
+        <a href="#sharing" class="tab-pill">Data Sharing</a>
+        <a href="#your-rights" class="tab-pill">Your Rights</a>
+        <a href="#cookies" class="tab-pill">Cookies</a>
+        <a href="#contact-privacy" class="tab-pill">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="policy-layout">
+
+      <!-- SIDEBAR NAV -->
+      <aside class="sidebar-nav" aria-label="Section navigation">
+        <p class="eyebrow">On This Page</p>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#what-we-collect">What We Collect</a></li>
+          <li><a href="#how-we-use">How We Use It</a></li>
+          <li><a href="#sharing">Data Sharing</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#changes">Policy Changes</a></li>
+          <li><a href="#contact-privacy">Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <!-- POLICY CONTENT -->
+      <main>
+
+        <!-- LAST UPDATED -->
+        <div class="last-updated-bar reveal">
+          <span>📄</span>
+          <span>Last updated: <strong>1 January 2025</strong> — This policy applies to products.aouragrp.com and all Aoura Products services.</span>
+        </div>
+
+        <!-- ── OVERVIEW ── -->
+        <section class="policy-section reveal" id="overview">
+          <div class="section-badge"><span class="badge-icon">🔒</span><span>Overview</span></div>
+          <h2>Our <em>Commitment</em></h2>
+          <p>Aoura Products ("we", "us", "our") is a division of Aoura Group, operating from Dubai, UAE. We are committed to handling your personal data responsibly, transparently, and in accordance with applicable UAE data protection legislation.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Who This Policy Applies To</h3>
+            <p>This Privacy Policy applies to all individuals who interact with Aoura Products, including:</p>
+            <ul>
+              <li>Customers who place orders through our website, WhatsApp, email, or phone</li>
+              <li>Business clients, procurement contacts, and account holders</li>
+              <li>Visitors to products.aouragrp.com and related web properties</li>
+              <li>Anyone who contacts us for quotes, support, or general enquiries</li>
+            </ul>
+            <p style="margin-top:14px;">By using our services or providing us with your information, you agree to the practices described in this policy.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>The Short Version</h3>
+            <div class="green-box">✅ We only collect what we need, use it to serve you, never sell it, and will delete it on request.</div>
+            <p>We collect your information solely to process orders, communicate with you, and improve our service. We do not sell, rent, or trade your data to any third party for marketing purposes. You have the right to access, correct, or request deletion of your data at any time.</p>
+          </div>
+        </section>
+
+        <!-- ── WHAT WE COLLECT ── -->
+        <section class="policy-section reveal" id="what-we-collect">
+          <div class="section-badge"><span class="badge-icon">📋</span><span>What We Collect</span></div>
+          <h2>Information We <em>Collect</em></h2>
+          <p>We collect only what is necessary to provide our products and services effectively. Here is a full breakdown of what we may hold about you.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Information You Provide Directly</h3>
+            <p>When you place an order, request a quote, or get in touch with us, you may provide:</p>
+            <ul>
+              <li>Full name and job title (for B2B accounts)</li>
+              <li>Company name and trade licence details (for business customers)</li>
+              <li>Delivery address and emirate</li>
+              <li>Phone number and WhatsApp contact</li>
+              <li>Email address</li>
+              <li>Payment method and billing details (processed securely — we do not store full card numbers)</li>
+              <li>Order history, preferences, and product enquiries</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Information Collected Automatically</h3>
+            <p>When you visit our website, we may automatically collect:</p>
+            <ul>
+              <li>IP address and approximate geographic location</li>
+              <li>Browser type, device, and operating system</li>
+              <li>Pages visited, time on site, and referral source</li>
+              <li>Cookie identifiers (see the Cookies section below)</li>
+            </ul>
+            <p style="margin-top:10px;">This technical data is used for website performance, security monitoring, and aggregate analytics. It is not linked to your personal identity unless you are a logged-in account holder.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Information from Third Parties</h3>
+            <p>In limited circumstances, we may receive information about you from:</p>
+            <ul>
+              <li>Payment processors (e.g. transaction confirmation and status)</li>
+              <li>Logistics partners (e.g. delivery confirmation and address verification)</li>
+              <li>Business referrals or procurement platforms where applicable</li>
+            </ul>
+            <p style="margin-top:10px;">We do not purchase data lists or acquire personal data from data brokers.</p>
+          </div>
+        </section>
+
+        <!-- ── HOW WE USE IT ── -->
+        <section class="policy-section reveal" id="how-we-use">
+          <div class="section-badge"><span class="badge-icon">⚙️</span><span>How We Use It</span></div>
+          <h2>How We Use Your <em>Data</em></h2>
+          <p>Every use of your personal data is grounded in a legitimate purpose. We do not process your data in ways you would not reasonably expect.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Order Fulfilment & Operations</h3>
+            <ul>
+              <li>Processing and confirming your orders</li>
+              <li>Arranging delivery to your specified address</li>
+              <li>Coordinating returns, refunds, and exchanges</li>
+              <li>Issuing invoices, receipts, and VAT tax documents</li>
+              <li>Communicating order status updates via WhatsApp or email</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Customer Service & Communication</h3>
+            <ul>
+              <li>Responding to enquiries, quotes, and support requests</li>
+              <li>Resolving complaints and disputes</li>
+              <li>Sending relevant product or service updates you have requested</li>
+              <li>Occasional promotional messages — you may opt out at any time by replying STOP or emailing us</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Legal & Compliance Obligations</h3>
+            <ul>
+              <li>Complying with UAE tax authority (FTA) requirements and VAT regulations</li>
+              <li>Maintaining records required under UAE commercial law</li>
+              <li>Responding to lawful requests from regulatory or law enforcement authorities</li>
+              <li>Fraud prevention and account security</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">④</span>
+            <h3>Service Improvement</h3>
+            <ul>
+              <li>Analysing aggregate order patterns to optimise our product range</li>
+              <li>Improving website performance and user experience</li>
+              <li>Understanding how customers discover and use our services</li>
+            </ul>
+            <p style="margin-top:10px;">Any analytics used for improvement are aggregated and anonymised wherever possible.</p>
+          </div>
+        </section>
+
+        <!-- ── DATA SHARING ── -->
+        <section class="policy-section reveal" id="sharing">
+          <div class="section-badge"><span class="badge-icon">🤝</span><span>Data Sharing</span></div>
+          <h2>Who We <em>Share</em> Data With</h2>
+          <p>We do not sell your personal data. Period. We share it only with trusted partners who need it to deliver your order or support our operations — and only to the extent necessary.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Logistics & Delivery Partners</h3>
+            <p>Your name, phone number, and delivery address are shared with our contracted courier and logistics partners solely to arrange delivery of your order. These partners are contractually prohibited from using your data for any other purpose.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Payment Processors</h3>
+            <p>Payment transactions are handled by secure, PCI-DSS compliant payment processors. We share only the minimum information required to complete the transaction. We do not store full card or banking details on our systems.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Technology & Platform Providers</h3>
+            <p>We use reputable third-party platforms to operate our business — including our e-commerce platform, email service, and analytics tools. These providers act as data processors under our instruction and are not permitted to use your data for their own purposes.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">④</span>
+            <h3>Legal & Regulatory Disclosure</h3>
+            <p>We may disclose your information if required to do so by UAE law, court order, or at the request of a relevant government authority. We will always aim to notify you of such a request where legally permitted to do so.</p>
+            <div class="highlight-box">⚠️ We will never sell, rent, or trade your personal data to any third party for marketing, advertising, or commercial purposes.</div>
+          </div>
+        </section>
+
+        <!-- ── DATA RETENTION ── -->
+        <section class="policy-section reveal" id="retention">
+          <div class="section-badge"><span class="badge-icon">📁</span><span>Data Retention</span></div>
+          <h2>How Long We <em>Keep</em> Your Data</h2>
+          <p>We retain your data only for as long as necessary to fulfil the purpose for which it was collected, or as required by UAE law.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Retention Periods</h3>
+            <ul>
+              <li><strong>Order and transaction records</strong> — retained for a minimum of 5 years in accordance with UAE VAT and commercial law requirements</li>
+              <li><strong>Customer account data</strong> — retained for the duration of your account relationship and up to 2 years after last activity</li>
+              <li><strong>Marketing communications data</strong> — retained until you opt out or request deletion</li>
+              <li><strong>Website analytics data</strong> — anonymised and aggregated; typically retained for 13 months</li>
+              <li><strong>Support and enquiry records</strong> — retained for up to 3 years for quality and legal purposes</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Data Deletion</h3>
+            <p>When data is no longer needed and no legal obligation requires retention, we securely delete or anonymise it. You may also request early deletion of your personal data — see Your Rights below for how to do this.</p>
+            <p>Note that some data may need to be retained even after a deletion request if required to comply with UAE tax or commercial law. We will inform you of any such limitation when processing your request.</p>
+          </div>
+        </section>
+
+        <!-- ── YOUR RIGHTS ── -->
+        <section class="policy-section reveal" id="your-rights">
+          <div class="section-badge"><span class="badge-icon">⚖️</span><span>Your Rights</span></div>
+          <h2>Your <em>Rights</em></h2>
+          <p>You have meaningful rights over your personal data. We are committed to honouring these rights promptly and without unnecessary friction.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Right of Access</h3>
+            <p>You may request a copy of all personal data we hold about you at any time. We will provide this within 30 days of a verified request, free of charge.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Right to Correction</h3>
+            <p>If any personal data we hold is inaccurate or incomplete, you have the right to request that we correct it. You can do this at any time by contacting us directly.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Right to Deletion ("Right to be Forgotten")</h3>
+            <p>You may request that we delete your personal data. We will comply unless we are required to retain it for legal or regulatory reasons, in which case we will explain the limitation clearly.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">④</span>
+            <h3>Right to Opt Out of Marketing</h3>
+            <p>You may withdraw consent to receive marketing communications from us at any time by replying STOP to any WhatsApp message, clicking unsubscribe in any email, or contacting us directly. Operational communications related to your active orders are not affected.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">⑤</span>
+            <h3>How to Exercise Your Rights</h3>
+            <p>To make any data request, contact us at:</p>
+            <div class="green-box">✉ <strong>customer@aouragrp.com</strong> — Subject: "Data Request" — We respond within 5 business days.</div>
+            <p>We may need to verify your identity before processing the request to protect against unauthorised access to your data.</p>
+          </div>
+        </section>
+
+        <!-- ── COOKIES ── -->
+        <section class="policy-section reveal" id="cookies">
+          <div class="section-badge"><span class="badge-icon">🍪</span><span>Cookies</span></div>
+          <h2>Cookies & <em>Tracking</em></h2>
+          <p>We use cookies and similar technologies to keep our website functional and to understand how it is used. We keep this minimal and purposeful.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Essential Cookies</h3>
+            <p>These cookies are strictly necessary for the website to function. They enable core features such as session management, cart functionality, and security. They cannot be disabled without breaking the site.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Analytics Cookies</h3>
+            <p>We use anonymised analytics tools (such as Google Analytics) to understand how visitors interact with our site — which pages are visited, how long users stay, and where they come from. This data is aggregated and never linked to your personal identity.</p>
+            <p>You may opt out of analytics cookies by adjusting your browser settings or using a browser extension such as Google Analytics Opt-out.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">③</span>
+            <h3>Third-Party & Embedded Content</h3>
+            <p>Pages that include embedded content (such as maps or payment widgets) may set cookies from the relevant third-party provider. These are governed by their own privacy policies. We do not use third-party advertising or retargeting cookies.</p>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">④</span>
+            <h3>Managing Cookies</h3>
+            <p>You can control and delete cookies through your browser settings at any time. Disabling essential cookies may affect site functionality. Most modern browsers allow you to block third-party cookies without affecting essential functionality.</p>
+          </div>
+        </section>
+
+        <!-- ── SECURITY ── -->
+        <section class="policy-section reveal" id="security">
+          <div class="section-badge"><span class="badge-icon">🛡️</span><span>Security</span></div>
+          <h2>Data <em>Security</em></h2>
+          <p>Protecting your data is a responsibility we take seriously. We implement appropriate technical and organisational measures to safeguard your information.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Security Measures</h3>
+            <ul>
+              <li>SSL/TLS encryption for all data transmitted through our website</li>
+              <li>Secure, access-controlled systems for storing customer records</li>
+              <li>Limited staff access — only those who need your data to perform their role can access it</li>
+              <li>PCI-DSS compliant payment processing — we do not store card details</li>
+              <li>Regular review of our security practices and data handling procedures</li>
+            </ul>
+          </div>
+
+          <div class="terms-block">
+            <span class="terms-num">②</span>
+            <h3>Data Breach Procedure</h3>
+            <p>In the unlikely event of a data breach that poses a risk to your rights, we will notify affected individuals and relevant authorities in accordance with applicable UAE law. We will act promptly to contain the breach and take remedial action.</p>
+            <p>If you suspect any unauthorised access to your account or data, please contact us immediately at customer@aouragrp.com.</p>
+          </div>
+        </section>
+
+        <!-- ── CHANGES ── -->
+        <section class="policy-section reveal" id="changes">
+          <div class="section-badge"><span class="badge-icon">📝</span><span>Policy Changes</span></div>
+          <h2>Updates to This <em>Policy</em></h2>
+          <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or applicable law.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>How We Notify You</h3>
+            <p>When we make material changes to this policy, we will update the "Last Updated" date at the top of this page. For significant changes affecting your rights, we will make reasonable efforts to notify existing customers directly via email or WhatsApp.</p>
+            <p>Your continued use of our services after any changes take effect constitutes acceptance of the updated policy. We encourage you to review this page periodically.</p>
+          </div>
+        </section>
+
+        <!-- ── CONTACT PRIVACY ── -->
+        <section class="policy-section reveal" id="contact-privacy">
+          <div class="section-badge"><span class="badge-icon">📬</span><span>Contact</span></div>
+          <h2>Questions About Your <em>Privacy</em></h2>
+          <p>If you have any questions, concerns, or requests relating to this Privacy Policy or how we handle your data, please reach out — we are happy to help.</p>
+
+          <div class="terms-block">
+            <span class="terms-num">①</span>
+            <h3>Data Controller</h3>
+            <p><strong>Aoura Products</strong> — A Division of Aoura Group<br/>
+            Dubai, United Arab Emirates</p>
+            <ul>
+              <li>Email: customer@aouragrp.com</li>
+              <li>WhatsApp: +971 52 150 3203</li>
+              <li>Website: products.aouragrp.com</li>
+            </ul>
+            <div class="green-box">✅ We aim to respond to all privacy-related enquiries within 5 business days.</div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <div class="container">
+      <div class="contact-strip-inner">
+        <div>
+          <h2>Questions About Your Data?</h2>
+          <p>Message us on WhatsApp — we respond within 2–4 hours and handle everything from there.</p>
+        </div>
+        <div class="strip-ctas">
+          <a href="https://wa.me/+971521503203" class="cta-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="mailto:customer@aouragrp.com" class="cta-email">✉ customer@aouragrp.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand-block">
+          <span class="footer-brand">Aoura Products</span>
+          <p class="footer-tagline">Dubai's one-stop office supply partner. Stationery, coffee, cleaning, and more — delivered UAE-wide.</p>
+        </div>
+
+        <!-- Company Links -->
+        <div>
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-col-links">
+            <li><a href="/about-us.html">About Us</a></li>
+            <li><a href="https://products.aouragrp.com/wp/shop/">Shop</a></li>
+            <li><a href="https://products.aouragrp.com/faq.html">FAQ & Policies</a></li>
+            <li><a href="https://products.aouragrp.com/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Get in Touch -->
+        <div>
+          <p class="footer-col-title">Get in Touch</p>
+          <ul class="footer-col-links">
+            <li><a href="https://wa.me/+971521503203">💬 +971 52 150 3203</a></li>
+            <li><a href="mailto:customer@aouragrp.com">✉ customer@aouragrp.com</a></li>
+            <li><a href="https://aouragrp.com" target="_blank" rel="noopener">🌐 aouragrp.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025 Aoura Products — A Division of Aoura Group, Dubai, UAE &nbsp;·&nbsp;
+          <a href="/about-us.html">About Us</a> &nbsp;·&nbsp;
+          <a href="/contact.html">Contact Us</a> &nbsp;·&nbsp;
+          <a href="/shipping-policy.html">Shipping Policy</a> &nbsp;·&nbsp;
+          <a href="/returns-refunds.html">Returns &amp; Refunds</a> &nbsp;·&nbsp;
+          <a href="/privacy-policy.html" style="color:rgba(255,255,255,0.55);">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="/terms-and-conditions.html">Terms &amp; Conditions</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/+971521503203" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp us">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Us
+  </a>
+
+  <script>
+  (function () {
+    'use strict';
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (!target) return;
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+    });
+
+    // Reveal on scroll
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+    // Sidebar active state
+    var sections = document.querySelectorAll('section[id]');
+    var sideLinks = document.querySelectorAll('.sidebar-nav a');
+    window.addEventListener('scroll', function() {
+      var scrollY = window.scrollY + 120;
+      sections.forEach(function(sec) {
+        if (sec.offsetTop <= scrollY && sec.offsetTop + sec.offsetHeight > scrollY) {
+          sideLinks.forEach(function(a) { a.classList.remove('active'); });
+          var match = document.querySelector('.sidebar-nav a[href="#' + sec.id + '"]');
+          if (match) match.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // Mobile nav
+    var hamburger = document.getElementById('hamburger');
+    var drawer = document.getElementById('mobileDrawer');
+    hamburger.addEventListener('click', function() {
+      var open = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Tab pill active on hero
+    document.querySelectorAll('.tab-pill').forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('.tab-pill').forEach(function(p) { p.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>
