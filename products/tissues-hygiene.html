@@ -55,17 +55,8 @@
               "@type": "Brand",
               "name": "Aoura Products"
             },
-            "offers": {
-              "@type": "Offer",
-              "url": "https://www.amazon.ae/dp/B0H3X1LPFX",
-              "priceCurrency": "AED",
-              "price": "99.00",
-              "availability": "https://schema.org/OutOfStock",
-              "seller": {
-                "@type": "Organization",
-                "name": "Aoura Products"
-              }
-            }
+            "url": "https://products.aouragrp.com/products/tissues-hygiene.html",
+            "image": "https://products.aouragrp.com/images/B0H3X1LPFX.jpg"
           }
         },
         {
@@ -79,17 +70,8 @@
               "@type": "Brand",
               "name": "Aoura Products"
             },
-            "offers": {
-              "@type": "Offer",
-              "url": "https://www.amazon.ae/dp/B0HJ419RFJ",
-              "priceCurrency": "AED",
-              "price": "95.00",
-              "availability": "https://schema.org/InStock",
-              "seller": {
-                "@type": "Organization",
-                "name": "Aoura Products"
-              }
-            }
+            "url": "https://products.aouragrp.com/products/tissues-hygiene.html",
+            "image": "https://products.aouragrp.com/images/B0HJ419RFJ.jpg"
           }
         }
       ]
@@ -98,61 +80,73 @@
 }</script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    :root{--black:#0a0a0a;--white:#fff;--g100:#f7f7f7;--g200:#e5e5e5;--g600:#555;--border:rgba(0,0,0,.09);--font-display:'Outfit',sans-serif;--font-body:'Inter',sans-serif}
-    body{font-family:var(--font-body);color:var(--black);background:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased}
+    :root{--black:#0a0a0a;--white:#fff;--g50:#fafafa;--g100:#f5f5f5;--g200:#e5e5e5;--g600:#555;--border:rgba(0,0,0,.08);--font-display:'Outfit',sans-serif;--font-body:'Inter',sans-serif}
+    body{font-family:var(--font-body);color:var(--black);background:var(--white);line-height:1.5;-webkit-font-smoothing:antialiased}
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-    .nav img{height:44px;width:auto;filter:grayscale(100%) contrast(1.2)}
-    .nav-links{display:flex;gap:20px;align-items:center;font-size:.88rem;font-weight:500}
-    .nav-cta{background:var(--black);color:var(--white);padding:9px 18px;border-radius:999px;font-size:.82rem}
-    .hero{padding:52px 0 32px;border-bottom:1px solid var(--border);background:var(--g100)}
-    .crumb{font-size:.8rem;color:var(--g600);margin-bottom:12px}
-    h1{font-family:var(--font-display);font-size:clamp(1.9rem,4vw,3rem);font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
-    .intro{color:var(--g600);max-width:760px;font-size:1rem}
-    .controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin:28px 0 20px}
-    .search-box{flex:1;min-width:240px;max-width:420px;padding:10px 14px;border:1px solid var(--g200);border-radius:8px;font-size:.92rem;font-family:inherit}
-    .filter-btn{padding:9px 16px;border:1px solid var(--g200);background:var(--white);border-radius:8px;font-size:.84rem;cursor:pointer;font-weight:500}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+    .nav img{height:40px;width:auto;filter:grayscale(100%) contrast(1.2)}
+    .nav-links{display:flex;gap:18px;align-items:center;font-size:.86rem;font-weight:500}
+    .nav-cta{background:var(--black);color:var(--white);padding:9px 16px;border-radius:999px;font-size:.82rem;white-space:nowrap}
+    .hero{padding:40px 0 28px;border-bottom:1px solid var(--border);background:var(--g50)}
+    .crumb{font-size:.78rem;color:var(--g600);margin-bottom:10px}
+    h1{font-family:var(--font-display);font-size:clamp(1.65rem,4vw,2.75rem);font-weight:600;letter-spacing:-.02em;margin-bottom:8px;line-height:1.15}
+    .intro{color:var(--g600);max-width:740px;font-size:.96rem}
+    .hero-contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .hero-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--g200);background:var(--white);font-size:.8rem;font-weight:500}
+    .hero-pill:hover{border-color:var(--black)}
+    .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:24px 0 18px}
+    .search-box{flex:1;min-width:200px;max-width:420px;padding:11px 14px;border:1px solid var(--g200);border-radius:10px;font-size:.92rem;font-family:inherit;background:var(--white)}
+    .search-box:focus{outline:none;border-color:var(--black)}
+    .filter-btn{padding:10px 16px;border:1px solid var(--g200);background:var(--white);border-radius:10px;font-size:.84rem;cursor:pointer;font-weight:500;min-height:42px}
     .filter-btn.active{background:var(--black);color:var(--white);border-color:var(--black)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding-bottom:48px}
-    .sku-card{border:1px solid var(--border);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:var(--white);transition:transform .2s,box-shadow .2s}
-    .sku-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-    .sku-img{height:210px;background:var(--g100);display:flex;align-items:center;justify-content:center;padding:16px;border-bottom:1px solid var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:18px;padding-bottom:44px}
+    .sku-card{border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;background:var(--white);transition:transform .2s,box-shadow .2s}
+    .sku-card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.06)}
+    .sku-img{aspect-ratio:4/3;background:var(--white);display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--border)}
     .sku-img img{max-width:100%;max-height:100%;object-fit:contain}
-    .no-img{text-align:center;color:var(--g600);display:flex;flex-direction:column;gap:6px}
-    .no-img span{font-weight:600;font-size:.9rem;color:var(--black)}
-    .no-img small{font-size:.75rem;letter-spacing:.04em}
-    .sku-body{padding:18px;display:flex;flex-direction:column;flex:1;gap:10px}
-    .sku-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.74rem;color:var(--g600)}
-    .badge{padding:2px 8px;border-radius:999px;font-weight:600;font-size:.7rem}
+    .sku-body{padding:16px;display:flex;flex-direction:column;flex:1;gap:10px}
+    .sku-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.72rem;color:var(--g600)}
+    .sku-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--g100);padding:3px 7px;border-radius:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%}
+    .badge{padding:3px 8px;border-radius:999px;font-weight:600;font-size:.68rem;white-space:nowrap}
     .in-stock{background:#e8f7ee;color:#146c37}
-    .out-stock{background:#f3f3f3;color:#666}
-    .sku-body h2{font-family:var(--font-display);font-size:1.02rem;font-weight:600;line-height:1.35}
-    .sku-price{font-size:1.05rem;font-weight:700;margin-top:auto}
-    .sku-price small{font-weight:400;font-size:.75rem;color:var(--g600);margin-left:6px}
-    .sku-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
-    .btn-amz,.btn-wa{text-align:center;padding:9px 10px;border-radius:8px;font-size:.8rem;font-weight:600}
-    .btn-amz{background:var(--black);color:var(--white)}
-    .btn-wa{border:1px solid var(--border);background:var(--g100);color:var(--black)}
-    .cat-nav{border-top:1px solid var(--border);padding:36px 0;background:var(--g100)}
-    .cat-nav h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:14px}
+    .on-req{background:var(--g100);color:var(--g600)}
+    .sku-body h2{font-family:var(--font-display);font-size:1rem;font-weight:600;line-height:1.35;margin-bottom:4px}
+    .sku-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:4px}
+    .btn-wa,.btn-mail{display:flex;align-items:center;justify-content:center;padding:10px 10px;border-radius:9px;font-size:.8rem;font-weight:600;min-height:40px;transition:opacity .15s}
+    .btn-wa{background:var(--black);color:var(--white)}
+    .btn-mail{border:1px solid var(--g200);background:var(--g50);color:var(--black)}
+    .btn-wa:hover,.btn-mail:hover{opacity:.85}
+    .cat-nav{border-top:1px solid var(--border);padding:32px 0;background:var(--g50)}
+    .cat-nav h3{font-family:var(--font-display);font-size:1.05rem;margin-bottom:14px}
     .cat-pills{display:flex;flex-wrap:wrap;gap:8px}
-    .cat-pill{padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:var(--white);font-size:.82rem;font-weight:500}
+    .cat-pill{padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:var(--white);font-size:.82rem;font-weight:500;white-space:nowrap}
     .cat-pill.active{background:var(--black);color:var(--white);border-color:var(--black)}
-    footer{border-top:1px solid var(--border);padding:28px 0;font-size:.82rem;color:var(--g600);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-    @media(max-width:680px){.nav-links a:not(.nav-cta){display:none}}
+    footer{border-top:1px solid var(--border);padding:24px 0;font-size:.8rem;color:var(--g600);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    @media(max-width:640px){
+      .wrap{padding:0 14px}
+      .nav{height:60px}
+      .nav img{height:34px}
+      .nav-links a:not(.nav-cta){display:none}
+      .hero{padding:28px 0 22px}
+      .controls{flex-direction:column;align-items:stretch}
+      .search-box{max-width:100%}
+      .grid{grid-template-columns:1fr;gap:14px}
+      .sku-img{aspect-ratio:16/10;padding:14px}
+      .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap nav">
-      <a href="../index.html" aria-label="Aoura Products Home"><img src="../assets/logo.png" alt="Aoura Products" width="110" height="44" decoding="async"/></a>
+      <a href="../index.html" aria-label="Aoura Products Home"><img src="../assets/logo.png" alt="Aoura Products" width="100" height="40" decoding="async"/></a>
       <nav class="nav-links" aria-label="Category Navigation">
-        <a href="../index.html#categories">All Categories</a>
+        <a href="../index.html#categories">Categories</a>
         <a href="../index.html#delivery">Delivery</a>
         <a href="../faq.html">FAQ</a>
-        <a class="nav-cta" href="https://wa.me/971521503203" target="_blank" rel="noopener">WhatsApp Quote</a>
+        <a class="nav-cta" href="tel:+971521503203">Call +971 52 150 3203</a>
       </nav>
     </div>
   </header>
@@ -162,35 +156,38 @@
       <p class="crumb"><a href="../index.html">Home</a> / Towels, Tissues &amp; Toilet Paper</p>
       <h1>Towels, Tissues &amp; Toilet Paper</h1>
       <p class="intro">Commercial hygiene and tissue supplies for offices, hospitality, and facility management across the UAE.</p>
+      <div class="hero-contact">
+        <a class="hero-pill" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 WhatsApp: +971 52 150 3203</a>
+        <a class="hero-pill" href="mailto:customer@aouragrp.com">✉️ customer@aouragrp.com</a>
+        <a class="hero-pill" href="tel:+971521503203">📞 Direct Sales Desk</a>
+      </div>
     </div>
   </section>
 
   <main class="wrap">
     <div class="controls">
-      <input id="q" class="search-box" type="search" placeholder="Filter by size, SKU, ASIN, or keyword..." aria-label="Filter products"/>
+      <input id="q" class="search-box" type="search" placeholder="Search by size, SKU, or product name..." aria-label="Filter products"/>
       <button id="stockBtn" class="filter-btn" type="button">In Stock Only</button>
     </div>
     <div class="grid" id="grid">
       <article class="sku-card" data-stock="0" data-search="toilet paper rolls – 50 rolls (400 sheets/roll) tr400-50r2 b0h3x1lpfx">
-  <div class="sku-img"><div class="no-img"><span>Towels, Tissues &amp; Toilet Paper</span><small>TR400-50R2</small></div></div>
+  <div class="sku-img"><img src="../images/B0H3X1LPFX.jpg" alt="Toilet Paper Rolls – 50 Rolls (400 Sheets/Roll)" loading="lazy" decoding="async"/></div>
   <div class="sku-body">
-    <div class="sku-meta"><span>SKU: TR400-50R2</span><span class="badge out-stock">Check Availability</span></div>
+    <div class="sku-meta"><span class="sku-code">TR400-50R2</span><span class="badge on-req">On Request</span></div>
     <h2>Toilet Paper Rolls – 50 Rolls (400 Sheets/Roll)</h2>
-    <p class="sku-price">AED 99.00 <small>ASIN: B0H3X1LPFX</small></p>
     <div class="sku-actions">
-      <a class="btn-amz" href="https://www.amazon.ae/dp/B0H3X1LPFX" target="_blank" rel="noopener">Buy on Amazon.ae</a>
-      <a class="btn-wa" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20bulk/B2B%20quote%20for%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%20%28SKU%3A%20TR400-50R2%2C%20ASIN%3A%20B0H3X1LPFX%29." target="_blank" rel="noopener">B2B Quote</a>
+      <a class="btn-wa" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%20%28SKU%3A%20TR400-50R2%29." target="_blank" rel="noopener">WhatsApp Quote</a>
+      <a class="btn-mail" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%20%28TR400-50R2%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%0A-%20SKU%3A%20TR400-50R2%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Inquiry</a>
     </div>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="zaina tissues 600 sheets (pack of 30 boxes) zna-nyl-600-30pk b0hj419rfj">
-  <div class="sku-img"><div class="no-img"><span>Towels, Tissues &amp; Toilet Paper</span><small>ZNA-NYL-600-30PK</small></div></div>
+  <div class="sku-img"><img src="../images/B0HJ419RFJ.jpg" alt="Zaina Tissues 600 Sheets (Pack of 30 Boxes)" loading="lazy" decoding="async"/></div>
   <div class="sku-body">
-    <div class="sku-meta"><span>SKU: ZNA-NYL-600-30PK</span><span class="badge in-stock">In Stock (20)</span></div>
+    <div class="sku-meta"><span class="sku-code">ZNA-NYL-600-30PK</span><span class="badge in-stock">In Stock</span></div>
     <h2>Zaina Tissues 600 Sheets (Pack of 30 Boxes)</h2>
-    <p class="sku-price">AED 95.00 <small>ASIN: B0HJ419RFJ</small></p>
     <div class="sku-actions">
-      <a class="btn-amz" href="https://www.amazon.ae/dp/B0HJ419RFJ" target="_blank" rel="noopener">Buy on Amazon.ae</a>
-      <a class="btn-wa" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20bulk/B2B%20quote%20for%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%20%28SKU%3A%20ZNA-NYL-600-30PK%2C%20ASIN%3A%20B0HJ419RFJ%29." target="_blank" rel="noopener">B2B Quote</a>
+      <a class="btn-wa" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%20%28SKU%3A%20ZNA-NYL-600-30PK%29." target="_blank" rel="noopener">WhatsApp Quote</a>
+      <a class="btn-mail" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%20%28ZNA-NYL-600-30PK%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%0A-%20SKU%3A%20ZNA-NYL-600-30PK%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Inquiry</a>
     </div>
   </div>
 </article>
