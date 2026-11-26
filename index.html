@@ -64,6 +64,18 @@
 .sf-legal a:hover{color:var(--black)}
 @media(max-width:900px){.sf-grid{grid-template-columns:1fr 1fr;gap:32px}}
 @media(max-width:560px){.site-footer{padding:44px 0 28px}.sf-grid{grid-template-columns:1fr;gap:28px}.sf-bottom{flex-direction:column;align-items:flex-start}}
+
+/* Featured Products Carousel */
+.sp-head-right{display:flex;align-items:center;gap:14px}
+.sp-nav-btns{display:flex;gap:8px}
+.sp-nav-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--black);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;transition:all .2s}
+.sp-nav-btn:hover{background:var(--black);color:var(--white);border-color:var(--black)}
+.sp-carousel{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 2px 16px}
+.sp-carousel::-webkit-scrollbar{display:none}
+.sp-carousel .sp-card{flex:0 0 calc((100% - 72px) / 4);scroll-snap-align:start;min-width:260px}
+@media(max-width:1180px){.sp-carousel .sp-card{flex:0 0 calc((100% - 48px) / 3)}}
+@media(max-width:860px){.sp-carousel .sp-card{flex:0 0 calc((100% - 24px) / 2)}}
+@media(max-width:560px){.sp-carousel .sp-card{flex:0 0 86%}}
 </style>
 <link href="favicon.png" rel="icon" type="image/png"/>
 <script type="application/ld+json">{
@@ -130,28 +142,69 @@
 <!-- STAR PRODUCTS -->
 <section aria-labelledby="products-heading" id="star-products">
 <div class="container">
-<div class="section-header reveal" style="max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; border-bottom: 1px solid var(--border); padding-bottom: 20px;">
+<div class="section-header reveal" style="max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 20px;">
 <h2 id="products-heading" style="margin: 0; font-size: clamp(2rem, 3.5vw, 3rem);">Featured Products</h2>
-<a href="#categories" style="font-size: 0.85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--black); border-bottom: 1px solid var(--black); padding-bottom: 4px;">View
-          All</a>
+<div class="sp-head-right">
+  <div class="sp-nav-btns">
+    <button type="button" class="sp-nav-btn" id="spPrev" aria-label="Previous featured products">←</button>
+    <button type="button" class="sp-nav-btn" id="spNext" aria-label="Next featured products">→</button>
+  </div>
+  <a href="products.html" style="font-size: 0.85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--black); border-bottom: 1px solid var(--black); padding-bottom: 4px;">View All</a>
 </div>
-<div class="sp-grid">
-<a class="sp-card reveal" href="products/laser-lens.html">
-<div class="sp-img-wrap"><img decoding="async" alt="Laser Protective Lens" loading="lazy" src="images/laser-lens-1.jpg" style="width: 100%; height: 100%; object-fit: contain; padding: 24px;"/ width="600" height="600"></div>
-<p class="sp-cat">Industrial</p>
+</div>
+<div class="sp-carousel" id="spCarousel">
+<a class="sp-card" href="products/laser-lens.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Laser Protective Lens" loading="lazy" src="images/laser-lens-1.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Industrial Optics</p>
 <h3>Laser Protective Lens</h3>
 <span class="sp-action-btn">View Product</span>
 </a>
-<a class="sp-card reveal" href="products/redwing.html">
-<div class="sp-img-wrap"><img decoding="async" alt="Redwing Safety Footwear" loading="lazy" src="images/3207-petroking-8.jpg" style="width: 100%; height: 100%; object-fit: contain; padding: 24px;"/ width="600" height="600"></div>
+<a class="sp-card" href="products/redwing.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Redwing Safety Footwear" loading="lazy" src="images/3207-petroking-8.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
 <p class="sp-cat">Industrial Safety</p>
 <h3>Redwing Safety Footwear</h3>
 <span class="sp-action-btn">View Product</span>
 </a>
-<a class="sp-card reveal" href="products/bubble-pouches.html">
-<div class="sp-img-wrap"><img decoding="async" alt="Bubble Wraps" loading="lazy" src="images/DBX-1119.jpg" style="width: 100%; height: 100%; object-fit: contain; padding: 24px;"/ width="600" height="600"></div>
-<p class="sp-cat">Packaging &amp; Shipping</p>
-<h3>Bubble Wraps</h3>
+<a class="sp-card" href="products/bubble-pouches.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Bubble Pouches & Mailers" loading="lazy" src="images/DBX-1119.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Packaging & Shipping</p>
+<h3>Bubble Pouches & Mailers</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/carton-boxes.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Heavy Duty Carton Boxes" loading="lazy" src="images/DBX-002.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Carton Boxes</p>
+<h3>Heavy Duty Carton Boxes</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/packing-masking-tape.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Packing & Masking Tape" loading="lazy" src="images/B8-4PXK-XUXS.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Adhesive Tapes</p>
+<h3>Packing & Masking Tape</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/stretch-shrink-film.html">
+<div class="sp-img-wrap"><img decoding="async" alt="POF Shrink & Stretch Film" loading="lazy" src="images/B0F9FMQ1YD.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Warehouse Film</p>
+<h3>POF Shrink & Stretch Film</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/copy-paper.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Double A & HP Copy Paper" loading="lazy" src="images/DBL-A4-B5-O.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Office Paper</p>
+<h3>Double A & HP Copy Paper</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/stanley.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Stanley® Tools & Blades" loading="lazy" src="images/B07J4R74P5.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Hand Tools</p>
+<h3>Stanley® Tools & Blades</h3>
+<span class="sp-action-btn">View Product</span>
+</a>
+<a class="sp-card" href="products/thermal-labels-stationery.html">
+<div class="sp-img-wrap"><img decoding="async" alt="Thermal Barcode Labels" loading="lazy" src="images/B0H4X37K7Q.jpg" width="600" height="600" style="width: 100%; height: 100%; object-fit: contain; padding: 18px;"/></div>
+<p class="sp-cat">Warehouse Labels</p>
+<h3>Thermal Barcode Labels</h3>
 <span class="sp-action-btn">View Product</span>
 </a>
 </div>
@@ -421,6 +474,35 @@
           document.body.style.overflow = '';
         });
       });
+
+      var spCar = document.getElementById('spCarousel');
+      var spPrev = document.getElementById('spPrev');
+      var spNext = document.getElementById('spNext');
+      if (spCar && spPrev && spNext) {
+        var step = function () {
+          var card = spCar.querySelector('.sp-card');
+          return card ? card.offsetWidth + 24 : 320;
+        };
+        var goNext = function () {
+          if (spCar.scrollLeft + spCar.clientWidth >= spCar.scrollWidth - 10) {
+            spCar.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            spCar.scrollBy({ left: step(), behavior: 'smooth' });
+          }
+        };
+        spNext.addEventListener('click', goNext);
+        spPrev.addEventListener('click', function () {
+          if (spCar.scrollLeft <= 10) {
+            spCar.scrollTo({ left: spCar.scrollWidth, behavior: 'smooth' });
+          } else {
+            spCar.scrollBy({ left: -step(), behavior: 'smooth' });
+          }
+        });
+        var timer = setInterval(goNext, 3500);
+        spCar.addEventListener('mouseenter', function () { clearInterval(timer); });
+        spCar.addEventListener('touchstart', function () { clearInterval(timer); }, { passive: true });
+        spCar.addEventListener('mouseleave', function () { timer = setInterval(goNext, 3500); });
+      }
     })();
   </script>
 </body>
