@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -257,56 +272,56 @@
   <div class="sku-meta"><span class="sku-code">JCR-110x50-50R</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 110×50 mm Thermal Label Rolls – 50 Rolls</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%20110%C3%9750%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2050%20Rolls%20%28SKU%3A%20JCR-110x50-50R%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%20110%C3%9750%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2050%20Rolls%20%28JCR-110x50-50R%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%20110%C3%9750%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2050%20Rolls%0A-%20SKU%3A%20JCR-110x50-50R%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H4X37K7Q" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 110×50 mm Thermal Label Rolls – 50 Rolls" data-sku="JCR-110x50-50R">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 58x39 mm label rolls – 700 labels stkr-vr-800 b0frrl4zcs">
   <div class="sp-img-wrap"><img src="../images/B0FRRL4ZCS.jpg" alt="AOURA 58x39 mm Label Rolls – 700 Labels" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">STKR-VR-800</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 58x39 mm Label Rolls – 700 Labels</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2058x39%20mm%20Label%20Rolls%20%E2%80%93%20700%20Labels%20%28SKU%3A%20STKR-VR-800%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2058x39%20mm%20Label%20Rolls%20%E2%80%93%20700%20Labels%20%28STKR-VR-800%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2058x39%20mm%20Label%20Rolls%20%E2%80%93%20700%20Labels%0A-%20SKU%3A%20STKR-VR-800%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FRRL4ZCS" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 58x39 mm Label Rolls – 700 Labels" data-sku="STKR-VR-800">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 38×25 mm thermal barcode labels – 1000 labels stkr-vr38-1000 b0frr73klk">
   <div class="sp-img-wrap"><img src="../images/B0FRR73KLK.jpg" alt="AOURA 38×25 mm Thermal Barcode Labels – 1000 Labels" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">STKR-VR38-1000</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 38×25 mm Thermal Barcode Labels – 1000 Labels</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2038%C3%9725%20mm%20Thermal%20Barcode%20Labels%20%E2%80%93%201000%20Labels%20%28SKU%3A%20STKR-VR38-1000%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2038%C3%9725%20mm%20Thermal%20Barcode%20Labels%20%E2%80%93%201000%20Labels%20%28STKR-VR38-1000%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2038%C3%9725%20mm%20Thermal%20Barcode%20Labels%20%E2%80%93%201000%20Labels%0A-%20SKU%3A%20STKR-VR38-1000%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FRR73KLK" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 38×25 mm Thermal Barcode Labels – 1000 Labels" data-sku="STKR-VR38-1000">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="aoura 57x40 mm thermal label rolls – 10 rolls trml-48-10 b0h5rq3wx2">
   <div class="sp-img-wrap"><img src="../images/B0H5RQ3WX2.jpg" alt="AOURA 57x40 mm Thermal Label Rolls – 10 Rolls" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">TRML-48-10</span><span class="sku-badge req">On Request</span></div>
   <h2>AOURA 57x40 mm Thermal Label Rolls – 10 Rolls</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2057x40%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2010%20Rolls%20%28SKU%3A%20TRML-48-10%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2057x40%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2010%20Rolls%20%28TRML-48-10%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2057x40%20mm%20Thermal%20Label%20Rolls%20%E2%80%93%2010%20Rolls%0A-%20SKU%3A%20TRML-48-10%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H5RQ3WX2" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 57x40 mm Thermal Label Rolls – 10 Rolls" data-sku="TRML-48-10">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="enpitsu glue stick 36g – box of 24 (12p) enp-gs-ag-12p b0h6gz818f">
   <div class="sp-img-wrap"><img src="../images/B0H6GZ818F.jpg" alt="ENPITSU Glue Stick 36g – Box of 24 (12P)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ENP-GS-AG-12P</span><span class="sku-badge in">In Stock</span></div>
   <h2>ENPITSU Glue Stick 36g – Box of 24 (12P)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2812P%29%20%28SKU%3A%20ENP-GS-AG-12P%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2812P%29%20%28ENP-GS-AG-12P%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2812P%29%0A-%20SKU%3A%20ENP-GS-AG-12P%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6GZ818F" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ENPITSU Glue Stick 36g – Box of 24 (12P)" data-sku="ENP-GS-AG-12P">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="enpitsu glue stick 36g – box of 24 (24p) enp-gs-ag-24p b0h6gz818f">
   <div class="sp-img-wrap"><img src="../images/B0H6GZ818F.jpg" alt="ENPITSU Glue Stick 36g – Box of 24 (24P)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ENP-GS-AG-24P</span><span class="sku-badge in">In Stock</span></div>
   <h2>ENPITSU Glue Stick 36g – Box of 24 (24P)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2824P%29%20%28SKU%3A%20ENP-GS-AG-24P%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2824P%29%20%28ENP-GS-AG-24P%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ENPITSU%20Glue%20Stick%2036g%20%E2%80%93%20Box%20of%2024%20%2824P%29%0A-%20SKU%3A%20ENP-GS-AG-24P%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6GZ818F" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ENPITSU Glue Stick 36g – Box of 24 (24P)" data-sku="ENP-GS-AG-24P">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="deli 3891 laminator machine (a4) dl-lm-3891 b0g4k1jyq1">
   <div class="sp-img-wrap"><img src="../images/DL-LM-3891.jpg" alt="DELI 3891 Laminator Machine (A4)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DL-LM-3891</span><span class="sku-badge req">On Request</span></div>
   <h2>DELI 3891 Laminator Machine (A4)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DELI%203891%20Laminator%20Machine%20%28A4%29%20%28SKU%3A%20DL-LM-3891%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DELI%203891%20Laminator%20Machine%20%28A4%29%20%28DL-LM-3891%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DELI%203891%20Laminator%20Machine%20%28A4%29%0A-%20SKU%3A%20DL-LM-3891%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0G4K1JYQ1" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DELI 3891 Laminator Machine (A4)" data-sku="DL-LM-3891">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -493,6 +508,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -522,6 +552,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

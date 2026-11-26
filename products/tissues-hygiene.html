@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -182,16 +197,16 @@
   <div class="sku-meta"><span class="sku-code">TR400-50R2</span><span class="sku-badge req">On Request</span></div>
   <h2>Toilet Paper Rolls – 50 Rolls (400 Sheets/Roll)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%20%28SKU%3A%20TR400-50R2%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%20%28TR400-50R2%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Toilet%20Paper%20Rolls%20%E2%80%93%2050%20Rolls%20%28400%20Sheets/Roll%29%0A-%20SKU%3A%20TR400-50R2%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H3X1LPFX" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Toilet Paper Rolls – 50 Rolls (400 Sheets/Roll)" data-sku="TR400-50R2">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="zaina tissues 600 sheets (pack of 30 boxes) zna-nyl-600-30pk b0hj419rfj">
   <div class="sp-img-wrap"><img src="../images/B0HJ419RFJ.jpg" alt="Zaina Tissues 600 Sheets (Pack of 30 Boxes)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ZNA-NYL-600-30PK</span><span class="sku-badge in">In Stock</span></div>
   <h2>Zaina Tissues 600 Sheets (Pack of 30 Boxes)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%20%28SKU%3A%20ZNA-NYL-600-30PK%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%20%28ZNA-NYL-600-30PK%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Zaina%20Tissues%20600%20Sheets%20%28Pack%20of%2030%20Boxes%29%0A-%20SKU%3A%20ZNA-NYL-600-30PK%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HJ419RFJ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Zaina Tissues 600 Sheets (Pack of 30 Boxes)" data-sku="ZNA-NYL-600-30PK">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -378,6 +393,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -407,6 +437,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

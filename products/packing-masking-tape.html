@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -377,120 +392,120 @@
   <div class="sku-meta"><span class="sku-code">9X-R7PH-RTRQ</span><span class="sku-badge in">In Stock</span></div>
   <h2>Masking Tape – 72 Rolls (48mm x 10 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2010%20Yards%29%20%28SKU%3A%209X-R7PH-RTRQ%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2010%20Yards%29%20%289X-R7PH-RTRQ%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2010%20Yards%29%0A-%20SKU%3A%209X-R7PH-RTRQ%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DS1DPTFX" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Masking Tape – 72 Rolls (48mm x 10 Yards)" data-sku="9X-R7PH-RTRQ">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 36 rolls (48mm x 100 yards) b8-4pxk-xuxs b0drfr4kdj">
   <div class="sp-img-wrap"><img src="../images/B8-4PXK-XUXS.jpg" alt="Clear Packing Tape – 36 Rolls (48mm x 100 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">B8-4PXK-XUXS</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 36 Rolls (48mm x 100 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%20%28SKU%3A%20B8-4PXK-XUXS%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%20%28B8-4PXK-XUXS%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%0A-%20SKU%3A%20B8-4PXK-XUXS%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DRFR4KDJ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 36 Rolls (48mm x 100 Yards)" data-sku="B8-4PXK-XUXS">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 36 rolls (48mm x 100 yards) [ag] b8-ag-4pxk-xuxs b0drfr4kdj">
   <div class="sp-img-wrap"><img src="../images/B0DRFR4KDJ.jpg" alt="Clear Packing Tape – 36 Rolls (48mm x 100 Yards) [AG]" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">B8-AG-4PXK-XUXS</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 36 Rolls (48mm x 100 Yards) [AG]</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%20%28SKU%3A%20B8-AG-4PXK-XUXS%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%20%28B8-AG-4PXK-XUXS%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%0A-%20SKU%3A%20B8-AG-4PXK-XUXS%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DRFR4KDJ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 36 Rolls (48mm x 100 Yards) [AG]" data-sku="B8-AG-4PXK-XUXS">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 36 rolls (48mm x 50 yards) ht-2oip-tz1x b0drfqw1bt">
   <div class="sp-img-wrap"><img src="../images/HT-2OIP-TZ1X.jpg" alt="Clear Packing Tape – 36 Rolls (48mm x 50 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HT-2OIP-TZ1X</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 36 Rolls (48mm x 50 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28SKU%3A%20HT-2OIP-TZ1X%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28HT-2OIP-TZ1X%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%0A-%20SKU%3A%20HT-2OIP-TZ1X%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DRFQW1BT" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 36 Rolls (48mm x 50 Yards)" data-sku="HT-2OIP-TZ1X">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="clear packing tape – 12 rolls (48mm x 50 yards) ht-2oip-tz1x-12 b0ds952tn7">
   <div class="sp-img-wrap"><img src="../images/HT-2OIP-TZ1X.jpg" alt="Clear Packing Tape – 12 Rolls (48mm x 50 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HT-2OIP-TZ1X-12</span><span class="sku-badge req">On Request</span></div>
   <h2>Clear Packing Tape – 12 Rolls (48mm x 50 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%2012%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28SKU%3A%20HT-2OIP-TZ1X-12%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%2012%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28HT-2OIP-TZ1X-12%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%2012%20Rolls%20%2848mm%20x%2050%20Yards%29%0A-%20SKU%3A%20HT-2OIP-TZ1X-12%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DS952TN7" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 12 Rolls (48mm x 50 Yards)" data-sku="HT-2OIP-TZ1X-12">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 36 rolls (48mm x 50 yards) [ag] ht-ag-2oip-tz1x b0drfqw1bt">
   <div class="sp-img-wrap"><img src="../images/B0DRFQW1BT.jpg" alt="Clear Packing Tape – 36 Rolls (48mm x 50 Yards) [AG]" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HT-AG-2OIP-TZ1X</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 36 Rolls (48mm x 50 Yards) [AG]</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%20%28SKU%3A%20HT-AG-2OIP-TZ1X%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%20%28HT-AG-2OIP-TZ1X%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%2036%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%0A-%20SKU%3A%20HT-AG-2OIP-TZ1X%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DRFQW1BT" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 36 Rolls (48mm x 50 Yards) [AG]" data-sku="HT-AG-2OIP-TZ1X">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="clear packing tape – 6 rolls (48mm x 100 yards) [ag] lf-ag-k6ow-100yd b0dr63r982">
   <div class="sp-img-wrap"><img src="../images/B0DR63R982.jpg" alt="Clear Packing Tape – 6 Rolls (48mm x 100 Yards) [AG]" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LF-AG-K6OW-100YD</span><span class="sku-badge req">On Request</span></div>
   <h2>Clear Packing Tape – 6 Rolls (48mm x 100 Yards) [AG]</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%20%28SKU%3A%20LF-AG-K6OW-100YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%20%28LF-AG-K6OW-100YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%20%5BAG%5D%0A-%20SKU%3A%20LF-AG-K6OW-100YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DR63R982" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 6 Rolls (48mm x 100 Yards) [AG]" data-sku="LF-AG-K6OW-100YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 6 rolls (48mm x 50 yards) [ag] lf-ag-k6ow-ziqf b0dr5v43p9">
   <div class="sp-img-wrap"><img src="../images/B0DR5V43P9.jpg" alt="Clear Packing Tape – 6 Rolls (48mm x 50 Yards) [AG]" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LF-AG-K6OW-ZIQF</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 6 Rolls (48mm x 50 Yards) [AG]</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%20%28SKU%3A%20LF-AG-K6OW-ZIQF%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%20%28LF-AG-K6OW-ZIQF%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%20%5BAG%5D%0A-%20SKU%3A%20LF-AG-K6OW-ZIQF%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DR5V43P9" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 6 Rolls (48mm x 50 Yards) [AG]" data-sku="LF-AG-K6OW-ZIQF">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 6 rolls (48mm x 100 yards) lf-k6ow-100yd b0dr63r982">
   <div class="sp-img-wrap"><img src="../images/LF-K6OW-100YD.jpg" alt="Clear Packing Tape – 6 Rolls (48mm x 100 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LF-K6OW-100YD</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 6 Rolls (48mm x 100 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%20%28SKU%3A%20LF-K6OW-100YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%20%28LF-K6OW-100YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%20100%20Yards%29%0A-%20SKU%3A%20LF-K6OW-100YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DR63R982" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 6 Rolls (48mm x 100 Yards)" data-sku="LF-K6OW-100YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="clear packing tape – 6 rolls (48mm x 50 yards) lf-k6ow-ziqf b0dr5v43p9">
   <div class="sp-img-wrap"><img src="../images/B0DR5V43P9.jpg" alt="Clear Packing Tape – 6 Rolls (48mm x 50 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LF-K6OW-ZIQF</span><span class="sku-badge in">In Stock</span></div>
   <h2>Clear Packing Tape – 6 Rolls (48mm x 50 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28SKU%3A%20LF-K6OW-ZIQF%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%20%28LF-K6OW-ZIQF%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Clear%20Packing%20Tape%20%E2%80%93%206%20Rolls%20%2848mm%20x%2050%20Yards%29%0A-%20SKU%3A%20LF-K6OW-ZIQF%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DR5V43P9" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Clear Packing Tape – 6 Rolls (48mm x 50 Yards)" data-sku="LF-K6OW-ZIQF">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura masking tape – 24 rolls (48mm x 10 yards) mt-b24-10yd b0ds1b6jns">
   <div class="sp-img-wrap"><img src="../images/B0DS1B6JNS.jpg" alt="AOURA Masking Tape – 24 Rolls (48mm x 10 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">MT-B24-10YD</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA Masking Tape – 24 Rolls (48mm x 10 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2010%20Yards%29%20%28SKU%3A%20MT-B24-10YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2010%20Yards%29%20%28MT-B24-10YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2010%20Yards%29%0A-%20SKU%3A%20MT-B24-10YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0DS1B6JNS" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA Masking Tape – 24 Rolls (48mm x 10 Yards)" data-sku="MT-B24-10YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="masking tape – 24 rolls (48mm x 25 yards) mt-b24-25yd b0fdl2q4c7">
   <div class="sp-img-wrap"><img src="../images/B0FDL2Q4C7.jpg" alt="Masking Tape – 24 Rolls (48mm x 25 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">MT-B24-25YD</span><span class="sku-badge in">In Stock</span></div>
   <h2>Masking Tape – 24 Rolls (48mm x 25 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28SKU%3A%20MT-B24-25YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28MT-B24-25YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Masking%20Tape%20%E2%80%93%2024%20Rolls%20%2848mm%20x%2025%20Yards%29%0A-%20SKU%3A%20MT-B24-25YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FDL2Q4C7" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Masking Tape – 24 Rolls (48mm x 25 Yards)" data-sku="MT-B24-25YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="masking tape – 48 rolls (48mm x 25 yards) mt-b48-25yd b0ff7f4djd">
   <div class="sp-img-wrap"><img src="../images/B0FF7F4DJD.jpg" alt="Masking Tape – 48 Rolls (48mm x 25 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">MT-B48-25YD</span><span class="sku-badge in">In Stock</span></div>
   <h2>Masking Tape – 48 Rolls (48mm x 25 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28SKU%3A%20MT-B48-25YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28MT-B48-25YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2025%20Yards%29%0A-%20SKU%3A%20MT-B48-25YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FF7F4DJD" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Masking Tape – 48 Rolls (48mm x 25 Yards)" data-sku="MT-B48-25YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="masking tape – 72 rolls (48mm x 25 yards) mt-b72-25yd b0ff7sjr17">
   <div class="sp-img-wrap"><img src="../images/B0FF7SJR17.jpg" alt="Masking Tape – 72 Rolls (48mm x 25 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">MT-B72-25YD</span><span class="sku-badge in">In Stock</span></div>
   <h2>Masking Tape – 72 Rolls (48mm x 25 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28SKU%3A%20MT-B72-25YD%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2025%20Yards%29%20%28MT-B72-25YD%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Masking%20Tape%20%E2%80%93%2072%20Rolls%20%2848mm%20x%2025%20Yards%29%0A-%20SKU%3A%20MT-B72-25YD%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FF7SJR17" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Masking Tape – 72 Rolls (48mm x 25 Yards)" data-sku="MT-B72-25YD">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="masking tape – 48 rolls (48mm x 10 yards) rg-wtpr-9bgc b0f8d1gwp4">
   <div class="sp-img-wrap"><img src="../images/B0F8D1GWP4.jpg" alt="Masking Tape – 48 Rolls (48mm x 10 Yards)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">RG-WTPR-9BGC</span><span class="sku-badge in">In Stock</span></div>
   <h2>Masking Tape – 48 Rolls (48mm x 10 Yards)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2010%20Yards%29%20%28SKU%3A%20RG-WTPR-9BGC%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2010%20Yards%29%20%28RG-WTPR-9BGC%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Masking%20Tape%20%E2%80%93%2048%20Rolls%20%2848mm%20x%2010%20Yards%29%0A-%20SKU%3A%20RG-WTPR-9BGC%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0F8D1GWP4" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Masking Tape – 48 Rolls (48mm x 10 Yards)" data-sku="RG-WTPR-9BGC">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -677,6 +692,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -706,6 +736,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

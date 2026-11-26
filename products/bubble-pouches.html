@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -377,120 +392,120 @@
   <div class="sku-meta"><span class="sku-code">2C-06P3-V2M9</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 27x40cm – Pack of 50 PCS (White Plastic)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%28SKU%3A%202C-06P3-V2M9%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%282C-06P3-V2M9%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%0A-%20SKU%3A%202C-06P3-V2M9%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GTX84CN1" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 27x40cm – Pack of 50 PCS (White Plastic)" data-sku="2C-06P3-V2M9">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 27x40cm – pack of 50 pcs (kraft paper) 5p-f0co-eevv b0gv1gmv3v">
   <div class="sp-img-wrap"><img src="../images/B0GV1GMV3V.jpg" alt="Aoura Bubble Pouches 27x40cm – Pack of 50 PCS (Kraft Paper)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">5P-F0CO-EEVV</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 27x40cm – Pack of 50 PCS (Kraft Paper)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%20%28SKU%3A%205P-F0CO-EEVV%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%20%285P-F0CO-EEVV%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2027x40cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%0A-%20SKU%3A%205P-F0CO-EEVV%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GV1GMV3V" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 27x40cm – Pack of 50 PCS (Kraft Paper)" data-sku="5P-F0CO-EEVV">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 15x21cm – pack of 100 pcs (kraft paper) bp-15x21-ag-100p-bbm b0h6v9fwj4">
   <div class="sp-img-wrap"><img src="../images/B0H6V9FWJ4.jpg" alt="Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (Kraft Paper)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-15X21-AG-100P-BBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (Kraft Paper)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%20%28SKU%3A%20BP-15X21-AG-100P-BBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%20%28BP-15X21-AG-100P-BBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%0A-%20SKU%3A%20BP-15X21-AG-100P-BBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6V9FWJ4" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (Kraft Paper)" data-sku="BP-15X21-AG-100P-BBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 15x21cm – pack of 100 pcs (white plastic) bp-15x21-ag-100p-wbm b0h6v69jp6">
   <div class="sp-img-wrap"><img src="../images/B0H6V69JP6.jpg" alt="Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (White Plastic)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-15X21-AG-100P-WBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (White Plastic)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%20%28SKU%3A%20BP-15X21-AG-100P-WBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%20%28BP-15X21-AG-100P-WBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2015x21cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%0A-%20SKU%3A%20BP-15X21-AG-100P-WBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6V69JP6" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 15x21cm – Pack of 100 PCS (White Plastic)" data-sku="BP-15X21-AG-100P-WBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 18x26cm – pack of 100 pcs (white plastic) bp-18 x 26-ag-100p-wpbm b0h6t2t67s">
   <div class="sp-img-wrap"><img src="../images/B0H6T2T67S.jpg" alt="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White Plastic)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-18 x 26-AG-100P-WPBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White Plastic)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%20%28SKU%3A%20BP-18%20x%2026-AG-100P-WPBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%20%28BP-18%20x%2026-AG-100P-WPBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%20Plastic%29%0A-%20SKU%3A%20BP-18%20x%2026-AG-100P-WPBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6T2T67S" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White Plastic)" data-sku="BP-18 x 26-AG-100P-WPBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 18x26cm – pack of 100 pcs (kraft paper) bp-18x26-ag-100p-bbm b0h6v6m1c7">
   <div class="sp-img-wrap"><img src="../images/B0H6V6M1C7.jpg" alt="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (Kraft Paper)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-18X26-AG-100P-BBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (Kraft Paper)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%20%28SKU%3A%20BP-18X26-AG-100P-BBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%20%28BP-18X26-AG-100P-BBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%20Paper%29%0A-%20SKU%3A%20BP-18X26-AG-100P-BBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6V6M1C7" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (Kraft Paper)" data-sku="BP-18X26-AG-100P-BBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 18x26cm – pack of 100 pcs (white) bp-18x26-ag-100p-wpbm b0h6t69tkf">
   <div class="sp-img-wrap"><img src="../images/B0H6T69TKF.jpg" alt="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-18X26-AG-100P-WPBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%20%28SKU%3A%20BP-18X26-AG-100P-WPBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%20%28BP-18X26-AG-100P-WPBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2018x26cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%0A-%20SKU%3A%20BP-18X26-AG-100P-WPBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6T69TKF" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 18x26cm – Pack of 100 PCS (White)" data-sku="BP-18X26-AG-100P-WPBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 27x36cm – pack of 50 pcs (white plastic) bp-27 x 36-ag-100p-wpbm b0h6t3z4fp">
   <div class="sp-img-wrap"><img src="../images/B0H6T3Z4FP.jpg" alt="Aoura Bubble Pouches 27x36cm – Pack of 50 PCS (White Plastic)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-27 x 36-AG-100P-WPBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 27x36cm – Pack of 50 PCS (White Plastic)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%28SKU%3A%20BP-27%20x%2036-AG-100P-WPBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%28BP-27%20x%2036-AG-100P-WPBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%0A-%20SKU%3A%20BP-27%20x%2036-AG-100P-WPBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6T3Z4FP" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 27x36cm – Pack of 50 PCS (White Plastic)" data-sku="BP-27 x 36-AG-100P-WPBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 27x36cm – pack of 100 pcs (brown paper) bp-27x36-ag-100p-bbm b0h6v3tpv2">
   <div class="sp-img-wrap"><img src="../images/B0H6V3TPV2.jpg" alt="Aoura Bubble Pouches 27x36cm – Pack of 100 PCS (Brown Paper)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-27X36-AG-100P-BBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 27x36cm – Pack of 100 PCS (Brown Paper)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Brown%20Paper%29%20%28SKU%3A%20BP-27X36-AG-100P-BBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Brown%20Paper%29%20%28BP-27X36-AG-100P-BBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2027x36cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Brown%20Paper%29%0A-%20SKU%3A%20BP-27X36-AG-100P-BBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6V3TPV2" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 27x36cm – Pack of 100 PCS (Brown Paper)" data-sku="BP-27X36-AG-100P-BBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 35x46cm – pack of 100 pcs (white) bp-35x46-ag-100p-wpbm b0h6syf3nf">
   <div class="sp-img-wrap"><img src="../images/B0H6SYF3NF.jpg" alt="Aoura Bubble Pouches 35x46cm – Pack of 100 PCS (White)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-35X46-AG-100P-WPBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 35x46cm – Pack of 100 PCS (White)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2035x46cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%20%28SKU%3A%20BP-35X46-AG-100P-WPBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2035x46cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%20%28BP-35X46-AG-100P-WPBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2035x46cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28White%29%0A-%20SKU%3A%20BP-35X46-AG-100P-WPBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H6SYF3NF" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 35x46cm – Pack of 100 PCS (White)" data-sku="BP-35X46-AG-100P-WPBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura protective bubble pouches 35x47cm – pack of 100 pcs bp-35x47-ag-100p-bbm b09pq811l2">
   <div class="sp-img-wrap"><img src="../images/B0H6V3TPV2.jpg" alt="Aoura Protective Bubble Pouches 35x47cm – Pack of 100 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BP-35X47-AG-100P-BBM</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Protective Bubble Pouches 35x47cm – Pack of 100 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Protective%20Bubble%20Pouches%2035x47cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28SKU%3A%20BP-35X47-AG-100P-BBM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Protective%20Bubble%20Pouches%2035x47cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28BP-35X47-AG-100P-BBM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Protective%20Bubble%20Pouches%2035x47cm%20%E2%80%93%20Pack%20of%20100%20PCS%0A-%20SKU%3A%20BP-35X47-AG-100P-BBM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B09PQ811L2" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Protective Bubble Pouches 35x47cm – Pack of 100 PCS" data-sku="BP-35X47-AG-100P-BBM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 10.5x18.5cm – pack of 100 pcs (kraft) bwl-10.5x18.5-ag-100pc-var b0hc3qrt77">
   <div class="sp-img-wrap"><img src="../images/B0HC3QRT77.jpg" alt="Aoura Bubble Pouches 10.5x18.5cm – Pack of 100 PCS (Kraft)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BWL-10.5x18.5-AG-100PC-VAR</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 10.5x18.5cm – Pack of 100 PCS (Kraft)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2010.5x18.5cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%20%28SKU%3A%20BWL-10.5x18.5-AG-100PC-VAR%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2010.5x18.5cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%20%28BWL-10.5x18.5-AG-100PC-VAR%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2010.5x18.5cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%0A-%20SKU%3A%20BWL-10.5x18.5-AG-100PC-VAR%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HC3QRT77" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 10.5x18.5cm – Pack of 100 PCS (Kraft)" data-sku="BWL-10.5x18.5-AG-100PC-VAR">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 28x43cm – pack of 100 pcs (kraft) bwl-28x43-ag-100pc-var b0hc3mlc21">
   <div class="sp-img-wrap"><img src="../images/B0HC3MLC21.jpg" alt="Aoura Bubble Pouches 28x43cm – Pack of 100 PCS (Kraft)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BWL-28x43-AG-100PC-VAR</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 28x43cm – Pack of 100 PCS (Kraft)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2028x43cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%20%28SKU%3A%20BWL-28x43-AG-100PC-VAR%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2028x43cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%20%28BWL-28x43-AG-100PC-VAR%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2028x43cm%20%E2%80%93%20Pack%20of%20100%20PCS%20%28Kraft%29%0A-%20SKU%3A%20BWL-28x43-AG-100PC-VAR%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HC3MLC21" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 28x43cm – Pack of 100 PCS (Kraft)" data-sku="BWL-28x43-AG-100PC-VAR">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 20x25cm – pack of 50 pcs (white plastic) dbx-1119 b0gsnxmncq">
   <div class="sp-img-wrap"><img src="../images/DBX-1119.jpg" alt="Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (White Plastic)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-1119</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (White Plastic)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%28SKU%3A%20DBX-1119%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%20%28DBX-1119%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28White%20Plastic%29%0A-%20SKU%3A%20DBX-1119%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSNXMNCQ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (White Plastic)" data-sku="DBX-1119">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura bubble pouches 20x25cm – pack of 50 pcs (kraft paper) p1-xc3y-gah7 b0gtx87865">
   <div class="sp-img-wrap"><img src="../images/B0GTX87865.jpg" alt="Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (Kraft Paper)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">P1-XC3Y-GAH7</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (Kraft Paper)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%20%28SKU%3A%20P1-XC3Y-GAH7%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%20%28P1-XC3Y-GAH7%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Bubble%20Pouches%2020x25cm%20%E2%80%93%20Pack%20of%2050%20PCS%20%28Kraft%20Paper%29%0A-%20SKU%3A%20P1-XC3Y-GAH7%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GTX87865" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Bubble Pouches 20x25cm – Pack of 50 PCS (Kraft Paper)" data-sku="P1-XC3Y-GAH7">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -677,6 +692,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -706,6 +736,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

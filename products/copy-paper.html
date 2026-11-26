@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -362,112 +377,112 @@
   <div class="sku-meta"><span class="sku-code">DBL-A3-1R</span><span class="sku-badge req">On Request</span></div>
   <h2>Double A Premium A3 80 GSM (1 Ream)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Double%20A%20Premium%20A3%2080%20GSM%20%281%20Ream%29%20%28SKU%3A%20DBL-A3-1R%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Double%20A%20Premium%20A3%2080%20GSM%20%281%20Ream%29%20%28DBL-A3-1R%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Double%20A%20Premium%20A3%2080%20GSM%20%281%20Ream%29%0A-%20SKU%3A%20DBL-A3-1R%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B00OB6SJ5W" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Double A Premium A3 80 GSM (1 Ream)" data-sku="DBL-A3-1R">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="double a a3 paper – box of 5 reams dbl-a4-b5 b0fp9sfyzv">
   <div class="sp-img-wrap"><img src="../images/DBL-A4-B5.jpg" alt="Double A A3 Paper – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBL-A4-B5</span><span class="sku-badge req">On Request</span></div>
   <h2>Double A A3 Paper – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Double%20A%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20DBL-A4-B5%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Double%20A%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28DBL-A4-B5%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Double%20A%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20DBL-A4-B5%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FP9SFYZV" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Double A A3 Paper – Box of 5 Reams" data-sku="DBL-A4-B5">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="double a a4 paper – box of 5 reams dbl-a4-b5-o b0frjtc6g9">
   <div class="sp-img-wrap"><img src="../images/DBL-A4-B5-O.jpg" alt="Double A A4 Paper – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBL-A4-B5-O</span><span class="sku-badge in">In Stock</span></div>
   <h2>Double A A4 Paper – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Double%20A%20A4%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20DBL-A4-B5-O%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Double%20A%20A4%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28DBL-A4-B5-O%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Double%20A%20A4%20Paper%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20DBL-A4-B5-O%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FRJTC6G9" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Double A A4 Paper – Box of 5 Reams" data-sku="DBL-A4-B5-O">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="hp everyday a4 printer paper 75gsm – 5 reams hp-a4-5bx b0frrdmrfz">
   <div class="sp-img-wrap"><img src="../images/HP-A4-5BX.jpg" alt="HP Everyday A4 Printer Paper 75gsm – 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HP-A4-5BX</span><span class="sku-badge in">In Stock</span></div>
   <h2>HP Everyday A4 Printer Paper 75gsm – 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20HP%20Everyday%20A4%20Printer%20Paper%2075gsm%20%E2%80%93%205%20Reams%20%28SKU%3A%20HP-A4-5BX%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20HP%20Everyday%20A4%20Printer%20Paper%2075gsm%20%E2%80%93%205%20Reams%20%28HP-A4-5BX%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20HP%20Everyday%20A4%20Printer%20Paper%2075gsm%20%E2%80%93%205%20Reams%0A-%20SKU%3A%20HP-A4-5BX%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FRRDMRFZ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="HP Everyday A4 Printer Paper 75gsm – 5 Reams" data-sku="HP-A4-5BX">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="hp everyday a4 paper 75gsm – 1 ream hp-a4-75gsm-1rm b0spbh1a8">
   <div class="sp-img-wrap"><img src="../images/HP-A4-5BX.jpg" alt="HP Everyday A4 Paper 75gsm – 1 Ream" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HP-A4-75GSM-1RM</span><span class="sku-badge in">In Stock</span></div>
   <h2>HP Everyday A4 Paper 75gsm – 1 Ream</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%20%28SKU%3A%20HP-A4-75GSM-1RM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%20%28HP-A4-75GSM-1RM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%0A-%20SKU%3A%20HP-A4-75GSM-1RM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0SPBH1A8" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="HP Everyday A4 Paper 75gsm – 1 Ream" data-sku="HP-A4-75GSM-1RM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="hp everyday a4 paper 75gsm – 5 ream carton hp-a4-75gsm-5r b002vpd1ai">
   <div class="sp-img-wrap"><img src="../images/B002VPD1AI.jpg" alt="HP Everyday A4 Paper 75gsm – 5 Ream Carton" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HP-A4-75GSM-5R</span><span class="sku-badge req">On Request</span></div>
   <h2>HP Everyday A4 Paper 75gsm – 5 Ream Carton</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%205%20Ream%20Carton%20%28SKU%3A%20HP-A4-75GSM-5R%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%205%20Ream%20Carton%20%28HP-A4-75GSM-5R%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%205%20Ream%20Carton%0A-%20SKU%3A%20HP-A4-75GSM-5R%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B002VPD1AI" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="HP Everyday A4 Paper 75gsm – 5 Ream Carton" data-sku="HP-A4-75GSM-5R">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="hp everyday a4 paper 75gsm – 1 ream (variant) hp-a4-75gsm-5ra b00spbh1a8">
   <div class="sp-img-wrap"><img src="../images/B00SPBH1A8.jpg" alt="HP Everyday A4 Paper 75gsm – 1 Ream (Variant)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">HP-A4-75GSM-5RA</span><span class="sku-badge req">On Request</span></div>
   <h2>HP Everyday A4 Paper 75gsm – 1 Ream (Variant)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%20%28Variant%29%20%28SKU%3A%20HP-A4-75GSM-5RA%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%20%28Variant%29%20%28HP-A4-75GSM-5RA%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20HP%20Everyday%20A4%20Paper%2075gsm%20%E2%80%93%201%20Ream%20%28Variant%29%0A-%20SKU%3A%20HP-A4-75GSM-5RA%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B00SPBH1A8" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="HP Everyday A4 Paper 75gsm – 1 Ream (Variant)" data-sku="HP-A4-75GSM-5RA">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="isopack a5 copy paper 80 gsm – 5 reams iso-a5-5rm b0hrpjw86h">
   <div class="sp-img-wrap"><img src="../images/B0HRPJW86H.jpg" alt="ISOPACK A5 Copy Paper 80 GSM – 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ISO-A5-5RM</span><span class="sku-badge in">In Stock</span></div>
   <h2>ISOPACK A5 Copy Paper 80 GSM – 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%205%20Reams%20%28SKU%3A%20ISO-A5-5RM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%205%20Reams%20%28ISO-A5-5RM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%205%20Reams%0A-%20SKU%3A%20ISO-A5-5RM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HRPJW86H" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ISOPACK A5 Copy Paper 80 GSM – 5 Reams" data-sku="ISO-A5-5RM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="isopack a5 copy paper 80 gsm – 10 reams iso-a5-10rm b0hrpwhy1z">
   <div class="sp-img-wrap"><img src="../images/B0HRPWHY1Z.jpg" alt="ISOPACK A5 Copy Paper 80 GSM – 10 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ISO-A5-10RM</span><span class="sku-badge in">In Stock</span></div>
   <h2>ISOPACK A5 Copy Paper 80 GSM – 10 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2010%20Reams%20%28SKU%3A%20ISO-A5-10RM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2010%20Reams%20%28ISO-A5-10RM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2010%20Reams%0A-%20SKU%3A%20ISO-A5-10RM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HRPWHY1Z" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ISOPACK A5 Copy Paper 80 GSM – 10 Reams" data-sku="ISO-A5-10RM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="isopack a5 copy paper 80 gsm – 20 reams iso-a5-20rm b0hrpml8jj">
   <div class="sp-img-wrap"><img src="../images/B0HRPML8JJ.jpg" alt="ISOPACK A5 Copy Paper 80 GSM – 20 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">ISO-A5-20RM</span><span class="sku-badge in">In Stock</span></div>
   <h2>ISOPACK A5 Copy Paper 80 GSM – 20 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2020%20Reams%20%28SKU%3A%20ISO-A5-20RM%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2020%20Reams%20%28ISO-A5-20RM%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ISOPACK%20A5%20Copy%20Paper%2080%20GSM%20%E2%80%93%2020%20Reams%0A-%20SKU%3A%20ISO-A5-20RM%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HRPML8JJ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ISOPACK A5 Copy Paper 80 GSM – 20 Reams" data-sku="ISO-A5-20RM">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="jk copier a3 paper – box of 5 reams jk-a3-b5 b0fp9w6jxg">
   <div class="sp-img-wrap"><img src="../images/JK-A3-B5.jpg" alt="JK Copier A3 Paper – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">JK-A3-B5</span><span class="sku-badge req">On Request</span></div>
   <h2>JK Copier A3 Paper – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20JK%20Copier%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20JK-A3-B5%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20JK%20Copier%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%20%28JK-A3-B5%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20JK%20Copier%20A3%20Paper%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20JK-A3-B5%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FP9W6JXG" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="JK Copier A3 Paper – Box of 5 Reams" data-sku="JK-A3-B5">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="jk copier a4 80 gsm – box of 5 reams jk-a4-5rms b0cxxxsxpl">
   <div class="sp-img-wrap"><img src="../images/B0CXXXSXPL.jpg" alt="JK Copier A4 80 GSM – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">JK-A4-5RMS</span><span class="sku-badge in">In Stock</span></div>
   <h2>JK Copier A4 80 GSM – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20JK%20Copier%20A4%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20JK-A4-5RMS%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20JK%20Copier%20A4%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28JK-A4-5RMS%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20JK%20Copier%20A4%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20JK-A4-5RMS%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0CXXXSXPL" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="JK Copier A4 80 GSM – Box of 5 Reams" data-sku="JK-A4-5RMS">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="omnia a3 copy paper 80 gsm – box of 5 reams omn-a3-b5 b0hbq811hr">
   <div class="sp-img-wrap"><img src="../images/B0HBQ811HR.jpg" alt="OMNIA A3 Copy Paper 80 GSM – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">OMN-A3-B5</span><span class="sku-badge in">In Stock</span></div>
   <h2>OMNIA A3 Copy Paper 80 GSM – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20OMNIA%20A3%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20OMN-A3-B5%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20OMNIA%20A3%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28OMN-A3-B5%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20OMNIA%20A3%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20OMN-A3-B5%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0HBQ811HR" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="OMNIA A3 Copy Paper 80 GSM – Box of 5 Reams" data-sku="OMN-A3-B5">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="maram red a4 copy paper 80 gsm – box of 5 reams prj-a4-5bx b0fjrrqrnx">
   <div class="sp-img-wrap"><img src="../images/B0FJRRQRNX.jpg" alt="MARAM Red A4 Copy Paper 80 GSM – Box of 5 Reams" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">PRJ-A4-5BX</span><span class="sku-badge in">In Stock</span></div>
   <h2>MARAM Red A4 Copy Paper 80 GSM – Box of 5 Reams</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20MARAM%20Red%20A4%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28SKU%3A%20PRJ-A4-5BX%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20MARAM%20Red%20A4%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%20%28PRJ-A4-5BX%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20MARAM%20Red%20A4%20Copy%20Paper%2080%20GSM%20%E2%80%93%20Box%20of%205%20Reams%0A-%20SKU%3A%20PRJ-A4-5BX%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FJRRQRNX" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="MARAM Red A4 Copy Paper 80 GSM – Box of 5 Reams" data-sku="PRJ-A4-5BX">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -654,6 +669,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -683,6 +713,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

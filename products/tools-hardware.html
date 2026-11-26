@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -302,80 +317,80 @@
   <div class="sku-meta"><span class="sku-code">STNLY-18mm</span><span class="sku-badge req">On Request</span></div>
   <h2>Stanley STHT10323-800 Snap Off Knife 18mm</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Stanley%20STHT10323-800%20Snap%20Off%20Knife%2018mm%20%28SKU%3A%20STNLY-18mm%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Stanley%20STHT10323-800%20Snap%20Off%20Knife%2018mm%20%28STNLY-18mm%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Stanley%20STHT10323-800%20Snap%20Off%20Knife%2018mm%0A-%20SKU%3A%20STNLY-18mm%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B07J4R74P5" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Stanley STHT10323-800 Snap Off Knife 18mm" data-sku="STNLY-18mm">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="stanley torpedo level 20cm stnly-200mm-lvl b0001grvaa">
   <div class="sp-img-wrap"><img src="../images/B0001GRVAA.jpg" alt="Stanley Torpedo Level 20cm" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">STNLY-200mm-LVL</span><span class="sku-badge req">On Request</span></div>
   <h2>Stanley Torpedo Level 20cm</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Stanley%20Torpedo%20Level%2020cm%20%28SKU%3A%20STNLY-200mm-LVL%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Stanley%20Torpedo%20Level%2020cm%20%28STNLY-200mm-LVL%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Stanley%20Torpedo%20Level%2020cm%0A-%20SKU%3A%20STNLY-200mm-LVL%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0001GRVAA" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Stanley Torpedo Level 20cm" data-sku="STNLY-200mm-LVL">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="stanley 5-pieces heavy duty knife blade (0-11-921) stnly-5pcs-knf-bld-921 b0001iwdce">
   <div class="sp-img-wrap"><img src="../images/B0001IWDCE.jpg" alt="Stanley 5-Pieces Heavy Duty Knife Blade (0-11-921)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">STNLY-5PCS-KNF-BLD-921</span><span class="sku-badge in">In Stock</span></div>
   <h2>Stanley 5-Pieces Heavy Duty Knife Blade (0-11-921)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Stanley%205-Pieces%20Heavy%20Duty%20Knife%20Blade%20%280-11-921%29%20%28SKU%3A%20STNLY-5PCS-KNF-BLD-921%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Stanley%205-Pieces%20Heavy%20Duty%20Knife%20Blade%20%280-11-921%29%20%28STNLY-5PCS-KNF-BLD-921%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Stanley%205-Pieces%20Heavy%20Duty%20Knife%20Blade%20%280-11-921%29%0A-%20SKU%3A%20STNLY-5PCS-KNF-BLD-921%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0001IWDCE" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Stanley 5-Pieces Heavy Duty Knife Blade (0-11-921)" data-sku="STNLY-5PCS-KNF-BLD-921">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="stanley measuring tape 5m stnly-mt-5m b07blz8shk">
   <div class="sp-img-wrap"><img src="../images/B07BLZ8SHK.jpg" alt="Stanley Measuring Tape 5M" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">STNLY-MT-5M</span><span class="sku-badge in">In Stock</span></div>
   <h2>Stanley Measuring Tape 5M</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Stanley%20Measuring%20Tape%205M%20%28SKU%3A%20STNLY-MT-5M%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Stanley%20Measuring%20Tape%205M%20%28STNLY-MT-5M%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Stanley%20Measuring%20Tape%205M%0A-%20SKU%3A%20STNLY-MT-5M%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B07BLZ8SHK" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Stanley Measuring Tape 5M" data-sku="STNLY-MT-5M">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="aoura 5-piece utility knife set jml-uknfe-2pc b0h2n7xw5p">
   <div class="sp-img-wrap"><img src="../images/B0H2N7XW5P.jpg" alt="Aoura 5-Piece Utility Knife Set" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">JML-UKNFE-2PC</span><span class="sku-badge req">On Request</span></div>
   <h2>Aoura 5-Piece Utility Knife Set</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%205-Piece%20Utility%20Knife%20Set%20%28SKU%3A%20JML-UKNFE-2PC%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%205-Piece%20Utility%20Knife%20Set%20%28JML-UKNFE-2PC%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%205-Piece%20Utility%20Knife%20Set%0A-%20SKU%3A%20JML-UKNFE-2PC%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H2N7XW5P" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura 5-Piece Utility Knife Set" data-sku="JML-UKNFE-2PC">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="jumlee hp heavy duty retractable utility knife vrl-knf-utl5 b0h3qm8m4f">
   <div class="sp-img-wrap"><img src="../images/B0H3QM8M4F.jpg" alt="Jumlee HP Heavy Duty Retractable Utility Knife" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">VRL-KNF-UTL5</span><span class="sku-badge req">On Request</span></div>
   <h2>Jumlee HP Heavy Duty Retractable Utility Knife</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Jumlee%20HP%20Heavy%20Duty%20Retractable%20Utility%20Knife%20%28SKU%3A%20VRL-KNF-UTL5%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Jumlee%20HP%20Heavy%20Duty%20Retractable%20Utility%20Knife%20%28VRL-KNF-UTL5%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Jumlee%20HP%20Heavy%20Duty%20Retractable%20Utility%20Knife%0A-%20SKU%3A%20VRL-KNF-UTL5%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H3QM8M4F" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Jumlee HP Heavy Duty Retractable Utility Knife" data-sku="VRL-KNF-UTL5">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="desk essentials screws &amp; nails assortment kit (8 types) de-ns01 b0fh75b1d6">
   <div class="sp-img-wrap"><img src="../images/B0FHB1C6NY.jpg" alt="DESK ESSENTIALS Screws &amp; Nails Assortment Kit (8 Types)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-NS01</span><span class="sku-badge req">On Request</span></div>
   <h2>DESK ESSENTIALS Screws &amp; Nails Assortment Kit (8 Types)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Screws%20%26%20Nails%20Assortment%20Kit%20%288%20Types%29%20%28SKU%3A%20DE-NS01%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Screws%20%26%20Nails%20Assortment%20Kit%20%288%20Types%29%20%28DE-NS01%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Screws%20%26%20Nails%20Assortment%20Kit%20%288%20Types%29%0A-%20SKU%3A%20DE-NS01%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FH75B1D6" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Screws &amp; Nails Assortment Kit (8 Types)" data-sku="DE-NS01">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="0" data-search="accureth 200 pcs screws &amp; nails kit (8 types) de-nss01 b0fhb1c6ny">
   <div class="sp-img-wrap"><img src="../images/B0FHB1C6NY.jpg" alt="ACCURETH 200 Pcs Screws &amp; Nails Kit (8 Types)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-NSS01</span><span class="sku-badge req">On Request</span></div>
   <h2>ACCURETH 200 Pcs Screws &amp; Nails Kit (8 Types)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20ACCURETH%20200%20Pcs%20Screws%20%26%20Nails%20Kit%20%288%20Types%29%20%28SKU%3A%20DE-NSS01%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20ACCURETH%20200%20Pcs%20Screws%20%26%20Nails%20Kit%20%288%20Types%29%20%28DE-NSS01%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20ACCURETH%20200%20Pcs%20Screws%20%26%20Nails%20Kit%20%288%20Types%29%0A-%20SKU%3A%20DE-NSS01%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHB1C6NY" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="ACCURETH 200 Pcs Screws &amp; Nails Kit (8 Types)" data-sku="DE-NSS01">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="laser protective lens d18x2mm 1064nm – pack of 3 lpl-ag-d18-2mm-15pcs b0h34rbkn7">
   <div class="sp-img-wrap"><img src="../images/laser-lens-1.jpg" alt="Laser Protective Lens D18x2mm 1064nm – Pack of 3" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LPL-AG-D18-2MM-15PCS</span><span class="sku-badge in">In Stock</span></div>
   <h2>Laser Protective Lens D18x2mm 1064nm – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%20LPL-AG-D18-2MM-15PCS%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%203%20%28LPL-AG-D18-2MM-15PCS%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%20LPL-AG-D18-2MM-15PCS%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H34RBKN7" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Laser Protective Lens D18x2mm 1064nm – Pack of 3" data-sku="LPL-AG-D18-2MM-15PCS">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura laser protective lens d18x2mm 1064nm – pack of 2 lpl-ag-d18-2mm-2pcs b0h3qz7g6l">
   <div class="sp-img-wrap"><img src="../images/laser-lens-1.jpg" alt="Aoura Laser Protective Lens D18x2mm 1064nm – Pack of 2" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">LPL-AG-D18-2MM-2PCS</span><span class="sku-badge in">In Stock</span></div>
   <h2>Aoura Laser Protective Lens D18x2mm 1064nm – Pack of 2</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Aoura%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%202%20%28SKU%3A%20LPL-AG-D18-2MM-2PCS%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Aoura%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%202%20%28LPL-AG-D18-2MM-2PCS%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Aoura%20Laser%20Protective%20Lens%20D18x2mm%201064nm%20%E2%80%93%20Pack%20of%202%0A-%20SKU%3A%20LPL-AG-D18-2MM-2PCS%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H3QZ7G6L" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Aoura Laser Protective Lens D18x2mm 1064nm – Pack of 2" data-sku="LPL-AG-D18-2MM-2PCS">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -562,6 +577,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -591,6 +621,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

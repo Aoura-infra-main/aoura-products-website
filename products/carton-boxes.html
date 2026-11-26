@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -362,112 +377,112 @@
   <div class="sku-meta"><span class="sku-code">20x17x17CM | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 20×17×17CM Small Carton Boxes – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2020%C3%9717%C3%9717CM%20Small%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%2020x17x17CM%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2020%C3%9717%C3%9717CM%20Small%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%2820x17x17CM%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2020%C3%9717%C3%9717CM%20Small%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%2020x17x17CM%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZFBVLVG" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 20×17×17CM Small Carton Boxes – Pack of 3" data-sku="20x17x17CM | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 31×23×25cm carton boxes – pack of 3 31x23x25cm | 3 pcs b0gzf3jm5h">
   <div class="sp-img-wrap"><img src="../images/B0GZF3JM5H.jpg" alt="AOURA 31×23×25CM Carton Boxes – Pack of 3" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">31x23x25CM | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 31×23×25CM Carton Boxes – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2031%C3%9723%C3%9725CM%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%2031x23x25CM%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2031%C3%9723%C3%9725CM%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%2831x23x25CM%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2031%C3%9723%C3%9725CM%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%2031x23x25CM%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZF3JM5H" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 31×23×25CM Carton Boxes – Pack of 3" data-sku="31x23x25CM | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 45×45×23cm heavy duty carton boxes – pack of 3 45x45x23cm | 3 pcs b0gzf4xtmg">
   <div class="sp-img-wrap"><img src="../images/B0GZF4XTMG.jpg" alt="AOURA 45×45×23CM Heavy Duty Carton Boxes – Pack of 3" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">45x45x23CM | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 45×45×23CM Heavy Duty Carton Boxes – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2045%C3%9745%C3%9723CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%2045x45x23CM%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2045%C3%9745%C3%9723CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%2845x45x23CM%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2045%C3%9745%C3%9723CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%2045x45x23CM%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZF4XTMG" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 45×45×23CM Heavy Duty Carton Boxes – Pack of 3" data-sku="45x45x23CM | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 45×45×70cm tall carton boxes – pack of 3 45x45x70 | 3 pcs b0gzdyn3d6">
   <div class="sp-img-wrap"><img src="../images/45x45x70%20%7C%203%20Pcs.jpg" alt="AOURA 45×45×70CM Tall Carton Boxes – Pack of 3" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">45x45x70 | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 45×45×70CM Tall Carton Boxes – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2045%C3%9745%C3%9770CM%20Tall%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%2045x45x70%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2045%C3%9745%C3%9770CM%20Tall%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%2845x45x70%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2045%C3%9745%C3%9770CM%20Tall%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%2045x45x70%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZDYN3D6" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 45×45×70CM Tall Carton Boxes – Pack of 3" data-sku="45x45x70 | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="boxes xxlarge (53x40x13) white 53x40x13crt-ag-wht b0h72xf3kd">
   <div class="sp-img-wrap"><img src="../images/B0H72XF3KD.jpg" alt="Boxes XXLarge (53x40x13) White" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">53x40x13CRT-AG-WHT</span><span class="sku-badge in">In Stock</span></div>
   <h2>Boxes XXLarge (53x40x13) White</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20Boxes%20XXLarge%20%2853x40x13%29%20White%20%28SKU%3A%2053x40x13CRT-AG-WHT%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20Boxes%20XXLarge%20%2853x40x13%29%20White%20%2853x40x13CRT-AG-WHT%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20Boxes%20XXLarge%20%2853x40x13%29%20White%0A-%20SKU%3A%2053x40x13CRT-AG-WHT%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0H72XF3KD" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="Boxes XXLarge (53x40x13) White" data-sku="53x40x13CRT-AG-WHT">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 53x53x53cm heavy duty carton boxes – 3 pcs 53x53x53cm | 3 pcs b0gzdvxs6r">
   <div class="sp-img-wrap"><img src="../images/53x53x53CM%20%7C%203%20Pcs.jpg" alt="AOURA 53x53x53CM Heavy Duty Carton Boxes – 3 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">53x53x53CM | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 53x53x53CM Heavy Duty Carton Boxes – 3 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2053x53x53CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%20%28SKU%3A%2053x53x53CM%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2053x53x53CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%20%2853x53x53CM%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2053x53x53CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%0A-%20SKU%3A%2053x53x53CM%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZDVXS6R" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 53x53x53CM Heavy Duty Carton Boxes – 3 PCS" data-sku="53x53x53CM | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 55×55×70cm extra large carton boxes – pack of 3 55x55x70cm | 3 pcs b0gzf8ptnh">
   <div class="sp-img-wrap"><img src="../images/55x55x70CM%20%7C%203%20Pcs.jpg" alt="AOURA 55×55×70CM Extra Large Carton Boxes – Pack of 3" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">55x55x70CM | 3 Pcs</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 55×55×70CM Extra Large Carton Boxes – Pack of 3</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2055%C3%9755%C3%9770CM%20Extra%20Large%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%28SKU%3A%2055x55x70CM%20%7C%203%20Pcs%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2055%C3%9755%C3%9770CM%20Extra%20Large%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%20%2855x55x70CM%20%7C%203%20Pcs%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2055%C3%9755%C3%9770CM%20Extra%20Large%20Carton%20Boxes%20%E2%80%93%20Pack%20of%203%0A-%20SKU%3A%2055x55x70CM%20%7C%203%20Pcs%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GZF8PTNH" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 55×55×70CM Extra Large Carton Boxes – Pack of 3" data-sku="55x55x70CM | 3 Pcs">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 45x45x45cm heavy duty carton boxes – 10 pcs dbx-002 b0gsnzt7bn">
   <div class="sp-img-wrap"><img src="../images/DBX-002.jpg" alt="AOURA 45x45x45CM Heavy Duty Carton Boxes – 10 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-002</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 45x45x45CM Heavy Duty Carton Boxes – 10 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2045x45x45CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%2010%20PCS%20%28SKU%3A%20DBX-002%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2045x45x45CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%2010%20PCS%20%28DBX-002%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2045x45x45CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%2010%20PCS%0A-%20SKU%3A%20DBX-002%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSNZT7BN" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 45x45x45CM Heavy Duty Carton Boxes – 10 PCS" data-sku="DBX-002">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 60x50x40cm heavy duty carton boxes – 3 pcs dbx-1114 b0gsnyrpd7">
   <div class="sp-img-wrap"><img src="../images/B0GSNYRPD7.jpg" alt="AOURA 60x50x40CM Heavy Duty Carton Boxes – 3 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-1114</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 60x50x40CM Heavy Duty Carton Boxes – 3 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2060x50x40CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%20%28SKU%3A%20DBX-1114%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2060x50x40CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%20%28DBX-1114%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2060x50x40CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%203%20PCS%0A-%20SKU%3A%20DBX-1114%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSNYRPD7" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 60x50x40CM Heavy Duty Carton Boxes – 3 PCS" data-sku="DBX-1114">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 45x30x20cm heavy duty carton boxes – 5 pcs dbx-1185 b0gsp5vpy2">
   <div class="sp-img-wrap"><img src="../images/DBX-1185.jpg" alt="AOURA 45x30x20CM Heavy Duty Carton Boxes – 5 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-1185</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 45x30x20CM Heavy Duty Carton Boxes – 5 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2045x30x20CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28SKU%3A%20DBX-1185%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2045x30x20CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28DBX-1185%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2045x30x20CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%0A-%20SKU%3A%20DBX-1185%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSP5VPY2" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 45x30x20CM Heavy Duty Carton Boxes – 5 PCS" data-sku="DBX-1185">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 40x34x33cm heavy duty carton boxes – 5 pcs dbx-366 b09x9812m4">
   <div class="sp-img-wrap"><img src="../images/DBX-366.jpg" alt="AOURA 40x34x33CM Heavy Duty Carton Boxes – 5 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-366</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 40x34x33CM Heavy Duty Carton Boxes – 5 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2040x34x33CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28SKU%3A%20DBX-366%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2040x34x33CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28DBX-366%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2040x34x33CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%0A-%20SKU%3A%20DBX-366%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B09X9812M4" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 40x34x33CM Heavy Duty Carton Boxes – 5 PCS" data-sku="DBX-366">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 58x58x78cm heavy duty carton boxes – 5 pcs dbx-995 b0gsnvwmrz">
   <div class="sp-img-wrap"><img src="../images/DBX-995.jpg" alt="AOURA 58x58x78CM Heavy Duty Carton Boxes – 5 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DBX-995</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 58x58x78CM Heavy Duty Carton Boxes – 5 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2058x58x78CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28SKU%3A%20DBX-995%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2058x58x78CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%20%28DBX-995%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2058x58x78CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%205%20PCS%0A-%20SKU%3A%20DBX-995%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSNVWMRZ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 58x58x78CM Heavy Duty Carton Boxes – 5 PCS" data-sku="DBX-995">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura 65×40×35cm heavy duty carton boxes – 4 pcs i2-to47-uag6 b0gsp6g8tc">
   <div class="sp-img-wrap"><img src="../images/I2-TO47-UAG6.jpg" alt="AOURA 65×40×35CM Heavy Duty Carton Boxes – 4 PCS" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">I2-TO47-UAG6</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA 65×40×35CM Heavy Duty Carton Boxes – 4 PCS</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%2065%C3%9740%C3%9735CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%204%20PCS%20%28SKU%3A%20I2-TO47-UAG6%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%2065%C3%9740%C3%9735CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%204%20PCS%20%28I2-TO47-UAG6%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%2065%C3%9740%C3%9735CM%20Heavy%20Duty%20Carton%20Boxes%20%E2%80%93%204%20PCS%0A-%20SKU%3A%20I2-TO47-UAG6%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GSP6G8TC" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA 65×40×35CM Heavy Duty Carton Boxes – 4 PCS" data-sku="I2-TO47-UAG6">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="aoura ramadan gift box packaging (320×228×70 mm) rmd-bx-3455 b0gmjtqn7c">
   <div class="sp-img-wrap"><img src="../images/B0GMJTQN7C.jpg" alt="AOURA Ramadan Gift Box Packaging (320×228×70 mm)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">RMD-BX-3455</span><span class="sku-badge in">In Stock</span></div>
   <h2>AOURA Ramadan Gift Box Packaging (320×228×70 mm)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20AOURA%20Ramadan%20Gift%20Box%20Packaging%20%28320%C3%97228%C3%9770%20mm%29%20%28SKU%3A%20RMD-BX-3455%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20AOURA%20Ramadan%20Gift%20Box%20Packaging%20%28320%C3%97228%C3%9770%20mm%29%20%28RMD-BX-3455%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20AOURA%20Ramadan%20Gift%20Box%20Packaging%20%28320%C3%97228%C3%9770%20mm%29%0A-%20SKU%3A%20RMD-BX-3455%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0GMJTQN7C" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="AOURA Ramadan Gift Box Packaging (320×228×70 mm)" data-sku="RMD-BX-3455">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -654,6 +669,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -683,6 +713,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>

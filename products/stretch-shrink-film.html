@@ -63,7 +63,22 @@
   .cat-controls{flex-direction:column;align-items:stretch}
   .cat-search{max-width:100%}
   .cat-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-}</style>
+}
+.enq-modal-backdrop{position:fixed;inset:0;background:rgba(10,10,10,.55);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.enq-modal-backdrop.open{display:flex}
+.enq-modal{background:var(--white);border:1px solid var(--border);border-radius:18px;max-width:460px;width:100%;padding:32px 28px;box-shadow:0 24px 60px rgba(0,0,0,.18);position:relative;animation:modalIn .22s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enq-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--grey-400);padding:4px 8px}
+.enq-close:hover{color:var(--black)}
+.enq-modal h3{font-family:var(--font-display);font-size:1.45rem;font-weight:500;margin:8px 0 10px;color:var(--black)}
+.enq-prod{font-size:.86rem;font-weight:500;color:var(--black);background:var(--grey-100);padding:10px 14px;border-radius:10px;margin-bottom:14px}
+.enq-note{font-size:.9rem;color:var(--grey-600);line-height:1.65;margin-bottom:22px}
+.enq-btns{display:flex;flex-direction:column;gap:10px}
+.enq-btn-mail,.enq-btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;text-align:center;transition:opacity .2s}
+.enq-btn-mail{background:var(--black);color:var(--white)}
+.enq-btn-wa{background:#25d366;color:#fff}
+.enq-btn-mail:hover,.enq-btn-wa:hover{opacity:.9}
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -302,80 +317,80 @@
   <div class="sku-meta"><span class="sku-code">7L-Z17C-DN8I</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS POF Shrink Film Roll – 16&quot; x 1070m (19 Micron)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20POF%20Shrink%20Film%20Roll%20%E2%80%93%2016%22%20x%201070m%20%2819%20Micron%29%20%28SKU%3A%207L-Z17C-DN8I%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20POF%20Shrink%20Film%20Roll%20%E2%80%93%2016%22%20x%201070m%20%2819%20Micron%29%20%287L-Z17C-DN8I%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20POF%20Shrink%20Film%20Roll%20%E2%80%93%2016%22%20x%201070m%20%2819%20Micron%29%0A-%20SKU%3A%207L-Z17C-DN8I%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0F9FMQ1YD" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS POF Shrink Film Roll – 16&quot; x 1070m (19 Micron)" data-sku="7L-Z17C-DN8I">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials shrink wrap roll – 18&quot; x 1070m (19 micron) bm-qb25-elaq b0f9fk369z">
   <div class="sp-img-wrap"><img src="../images/B0F9FK369Z.jpg" alt="DESK ESSENTIALS Shrink Wrap Roll – 18&quot; x 1070m (19 Micron)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">BM-QB25-ELAQ</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Shrink Wrap Roll – 18&quot; x 1070m (19 Micron)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Shrink%20Wrap%20Roll%20%E2%80%93%2018%22%20x%201070m%20%2819%20Micron%29%20%28SKU%3A%20BM-QB25-ELAQ%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Shrink%20Wrap%20Roll%20%E2%80%93%2018%22%20x%201070m%20%2819%20Micron%29%20%28BM-QB25-ELAQ%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Shrink%20Wrap%20Roll%20%E2%80%93%2018%22%20x%201070m%20%2819%20Micron%29%0A-%20SKU%3A%20BM-QB25-ELAQ%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0F9FK369Z" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Shrink Wrap Roll – 18&quot; x 1070m (19 Micron)" data-sku="BM-QB25-ELAQ">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials pof shrink wrap roll – 14&quot; x 1070m (19 micron) gs-pofs-14in b0f8f26q79">
   <div class="sp-img-wrap"><img src="../images/B0F8F26Q79.jpg" alt="DESK ESSENTIALS POF Shrink Wrap Roll – 14&quot; x 1070m (19 Micron)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">GS-POFS-14IN</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS POF Shrink Wrap Roll – 14&quot; x 1070m (19 Micron)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20POF%20Shrink%20Wrap%20Roll%20%E2%80%93%2014%22%20x%201070m%20%2819%20Micron%29%20%28SKU%3A%20GS-POFS-14IN%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20POF%20Shrink%20Wrap%20Roll%20%E2%80%93%2014%22%20x%201070m%20%2819%20Micron%29%20%28GS-POFS-14IN%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20POF%20Shrink%20Wrap%20Roll%20%E2%80%93%2014%22%20x%201070m%20%2819%20Micron%29%0A-%20SKU%3A%20GS-POFS-14IN%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0F8F26Q79" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS POF Shrink Wrap Roll – 14&quot; x 1070m (19 Micron)" data-sku="GS-POFS-14IN">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials stretch film – 6 rolls (1.5 kg) de-sw-1.5 b0fhbf8374">
   <div class="sp-img-wrap"><img src="../images/B0FHBF8374.jpg" alt="DESK ESSENTIALS Stretch Film – 6 Rolls (1.5 kg)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-SW-1.5</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Stretch Film – 6 Rolls (1.5 kg)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.5%20kg%29%20%28SKU%3A%20DE-SW-1.5%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.5%20kg%29%20%28DE-SW-1.5%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.5%20kg%29%0A-%20SKU%3A%20DE-SW-1.5%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHBF8374" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Stretch Film – 6 Rolls (1.5 kg)" data-sku="DE-SW-1.5">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials stretch film – 6 rolls (1.8 kg) de-sw-1.8 b0fhbphxjz">
   <div class="sp-img-wrap"><img src="../images/B0FHBPHXJZ.jpg" alt="DESK ESSENTIALS Stretch Film – 6 Rolls (1.8 kg)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-SW-1.8</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Stretch Film – 6 Rolls (1.8 kg)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.8%20kg%29%20%28SKU%3A%20DE-SW-1.8%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.8%20kg%29%20%28DE-SW-1.8%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%281.8%20kg%29%0A-%20SKU%3A%20DE-SW-1.8%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHBPHXJZ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Stretch Film – 6 Rolls (1.8 kg)" data-sku="DE-SW-1.8">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials stretch film – 6 rolls (2.0 kg) de-sw-2.0 b0fhbsydbv">
   <div class="sp-img-wrap"><img src="../images/B0FHBSYDBV.jpg" alt="DESK ESSENTIALS Stretch Film – 6 Rolls (2.0 kg)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-SW-2.0</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Stretch Film – 6 Rolls (2.0 kg)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.0%20kg%29%20%28SKU%3A%20DE-SW-2.0%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.0%20kg%29%20%28DE-SW-2.0%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.0%20kg%29%0A-%20SKU%3A%20DE-SW-2.0%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHBSYDBV" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Stretch Film – 6 Rolls (2.0 kg)" data-sku="DE-SW-2.0">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials stretch film – 6 rolls (2.3 kg) de-sw-2.3 b0fhbptttb">
   <div class="sp-img-wrap"><img src="../images/B0FHBPTTTB.jpg" alt="DESK ESSENTIALS Stretch Film – 6 Rolls (2.3 kg)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-SW-2.3</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Stretch Film – 6 Rolls (2.3 kg)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.3%20kg%29%20%28SKU%3A%20DE-SW-2.3%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.3%20kg%29%20%28DE-SW-2.3%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%282.3%20kg%29%0A-%20SKU%3A%20DE-SW-2.3%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHBPTTTB" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Stretch Film – 6 Rolls (2.3 kg)" data-sku="DE-SW-2.3">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials stretch film – 6 rolls (3.0 kg) de-sw-3.0 b0fhbpndfq">
   <div class="sp-img-wrap"><img src="../images/B0FHBPNDFQ.jpg" alt="DESK ESSENTIALS Stretch Film – 6 Rolls (3.0 kg)" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">DE-SW-3.0</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Stretch Film – 6 Rolls (3.0 kg)</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%283.0%20kg%29%20%28SKU%3A%20DE-SW-3.0%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%283.0%20kg%29%20%28DE-SW-3.0%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Stretch%20Film%20%E2%80%93%206%20Rolls%20%283.0%20kg%29%0A-%20SKU%3A%20DE-SW-3.0%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FHBPNDFQ" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Stretch Film – 6 Rolls (3.0 kg)" data-sku="DE-SW-3.0">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials machine grade stretch film – 13kg roll yk-huvt-iye3 b0ffdp9nz2">
   <div class="sp-img-wrap"><img src="../images/B0FFDP9NZ2.jpg" alt="DESK ESSENTIALS Machine Grade Stretch Film – 13kg Roll" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">YK-HUVT-IYE3</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Machine Grade Stretch Film – 13kg Roll</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Machine%20Grade%20Stretch%20Film%20%E2%80%93%2013kg%20Roll%20%28SKU%3A%20YK-HUVT-IYE3%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Machine%20Grade%20Stretch%20Film%20%E2%80%93%2013kg%20Roll%20%28YK-HUVT-IYE3%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Machine%20Grade%20Stretch%20Film%20%E2%80%93%2013kg%20Roll%0A-%20SKU%3A%20YK-HUVT-IYE3%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FFDP9NZ2" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Machine Grade Stretch Film – 13kg Roll" data-sku="YK-HUVT-IYE3">Enquire Now</button>
   </div>
 </article><article class="sku-card" data-stock="1" data-search="desk essentials honeycomb packing paper roll – 50cm x 50m gs-hc-50brwn b0fl12486n">
   <div class="sp-img-wrap"><img src="../images/GS-HC-50BRWN.jpg" alt="DESK ESSENTIALS Honeycomb Packing Paper Roll – 50cm x 50m" loading="lazy" decoding="async"/></div>
   <div class="sku-meta"><span class="sku-code">GS-HC-50BRWN</span><span class="sku-badge in">In Stock</span></div>
   <h2>DESK ESSENTIALS Honeycomb Packing Paper Roll – 50cm x 50m</h2>
   <div class="sku-actions">
-    <a class="btn-quote" href="https://wa.me/971521503203?text=Hi%20Aoura%20Products%2C%20I%27d%20like%20a%20quote%20for%20DESK%20ESSENTIALS%20Honeycomb%20Packing%20Paper%20Roll%20%E2%80%93%2050cm%20x%2050m%20%28SKU%3A%20GS-HC-50BRWN%29." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn-email" href="mailto:customer@aouragrp.com?subject=Quote%20Request%3A%20DESK%20ESSENTIALS%20Honeycomb%20Packing%20Paper%20Roll%20%E2%80%93%2050cm%20x%2050m%20%28GS-HC-50BRWN%29&amp;body=Hi%20Aoura%20Products%2C%0A%0APlease%20share%20pricing%20and%20availability%20for%3A%0A-%20Product%3A%20DESK%20ESSENTIALS%20Honeycomb%20Packing%20Paper%20Roll%20%E2%80%93%2050cm%20x%2050m%0A-%20SKU%3A%20GS-HC-50BRWN%0A-%20Quantity%20needed%3A%20%0A%0AThank%20you.">Email Quote</a>
+    <a class="btn-quote" href="https://www.amazon.ae/dp/B0FL12486N" target="_blank" rel="noopener">Buy on Amazon</a>
+    <button type="button" class="btn-email enq-trigger" data-title="DESK ESSENTIALS Honeycomb Packing Paper Roll – 50cm x 50m" data-sku="GS-HC-50BRWN">Enquire Now</button>
   </div>
 </article>
 </div>
@@ -562,6 +577,21 @@
     WhatsApp Us
   </a>
 
+
+<div class="enq-modal-backdrop" id="enqModal" role="dialog" aria-modal="true" aria-labelledby="enqTitle">
+  <div class="enq-modal">
+    <button class="enq-close" id="enqClose" aria-label="Close">&times;</button>
+    <p class="eyebrow">Direct Sales Inquiry</p>
+    <h3 id="enqTitle">Enquire Now</h3>
+    <div class="enq-prod" id="enqProd"></div>
+    <p class="enq-note">All emails sent to <strong>customer@aouragrp.com</strong> will be responded to within <strong>24 hours</strong>. In case you need a faster response, you can also message us directly on WhatsApp.</p>
+    <div class="enq-btns">
+      <a class="enq-btn-mail" id="enqMailBtn" href="mailto:customer@aouragrp.com">✉️ Open Email (customer@aouragrp.com)</a>
+      <a class="enq-btn-wa" id="enqWaBtn" href="https://wa.me/971521503203" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var q=document.getElementById('q'),btn=document.getElementById('stockBtn'),cards=Array.from(document.querySelectorAll('.sku-card'));
@@ -591,6 +621,24 @@
       document.body.style.overflow='';
     });
   });
+
+  var enqModal=document.getElementById('enqModal'),enqClose=document.getElementById('enqClose'),enqProd=document.getElementById('enqProd'),enqMailBtn=document.getElementById('enqMailBtn'),enqWaBtn=document.getElementById('enqWaBtn');
+  document.querySelectorAll('.enq-trigger').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.title,s=b.dataset.sku;
+      enqProd.textContent=t+' (SKU: '+s+')';
+      var subj='Enquiry: '+t+' ('+s+')';
+      var body='Hi Aoura Products,\n\nI would like to enquire about:\n- Product: '+t+'\n- SKU: '+s+'\n- Quantity: \n\nThank you.';
+      var mailUrl='mailto:customer@aouragrp.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      var waUrl='https://wa.me/971521503203?text='+encodeURIComponent('Hi Aoura Products, I would like to enquire about '+t+' (SKU: '+s+').');
+      enqMailBtn.setAttribute('href',mailUrl);
+      enqWaBtn.setAttribute('href',waUrl);
+      enqModal.classList.add('open');
+      window.location.href=mailUrl;
+    });
+  });
+  enqClose.addEventListener('click',function(){enqModal.classList.remove('open');});
+  enqModal.addEventListener('click',function(e){if(e.target===enqModal)enqModal.classList.remove('open');});
 })();
 </script>
 </body>
