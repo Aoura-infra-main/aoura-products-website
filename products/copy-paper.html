@@ -121,6 +121,59 @@
 .faq-card{background:var(--grey-100);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
 .faq-card h3{font-family:var(--font-body);font-size:.98rem;font-weight:600;margin-bottom:8px;color:var(--black);line-height:1.4}
 .faq-card p{font-size:.86rem;color:var(--grey-600);line-height:1.65;margin:0}
+
+/* MOBILE-FIRST UNCLUTTERED UX */
+@media(max-width:768px){
+  html{font-size:15px}
+  :root{--section-pad:44px;--nav-h:58px}
+  .container{padding:0 14px}
+  .nav-wrap{top:10px}
+  .nav{width:calc(100% - 24px)}
+  .nav-inner{padding:0 14px}
+  .hero-bg-text{display:none !important}
+  #hero{min-height:auto !important;padding:calc(var(--nav-h) + 38px) 0 32px !important}
+  .hero-content{padding:0 14px !important;min-height:auto !important}
+  .hero-content h1{font-size:2.2rem !important;margin-bottom:10px}
+  .hero-sub{font-size:.76rem;letter-spacing:.08em;margin-bottom:0 !important}
+  #star-products{padding:36px 0 !important}
+  .sp-carousel .sp-card{flex:0 0 68%;min-width:200px;padding:14px !important}
+  .sp-carousel .sp-img-wrap{margin-bottom:10px}
+  .sp-carousel h3{font-size:.94rem}
+  .sp-action-btn{padding:8px 14px;font-size:.72rem;margin-top:10px}
+  /* 2-column compact category grid on mobile index */
+  #categories{padding:36px 0 !important}
+  #categories .container>div:last-child{grid-template-columns:1fr 1fr !important;gap:10px !important}
+  #categories .sp-card{padding:14px !important}
+  #categories .sp-card h3{font-size:.9rem;margin-bottom:6px}
+  #categories .sp-action-btn{padding:6px 10px;font-size:.66rem;margin-top:6px}
+  /* 2-column app-style product grid on category & all-products pages */
+  .cat-hero{padding:calc(var(--nav-h) + 32px) 0 24px !important}
+  .cat-hero h1{font-size:1.75rem !important;margin:8px 0}
+  .cat-hero .divider{margin:12px auto}
+  .cat-hero p.intro{font-size:.86rem;line-height:1.5}
+  .cat-contact-row{margin-top:14px;gap:6px}
+  .cat-chip{padding:7px 12px;font-size:.74rem}
+  .cat-controls{margin:18px 0 14px;padding-bottom:12px;gap:8px}
+  .cat-search{padding:10px 14px;font-size:.85rem}
+  .sku-grid,.stanley-grid{grid-template-columns:repeat(2,1fr) !important;gap:10px !important;padding-bottom:36px !important}
+  .sku-card{padding:12px !important;border-radius:10px}
+  .sku-card .sp-img-wrap{margin-bottom:10px;padding:4px}
+  .sku-meta{flex-direction:column;align-items:flex-start;gap:4px;margin-bottom:6px}
+  .sku-code{max-width:100%;font-size:.62rem}
+  .sku-card h2,.sku-card h3{font-size:.84rem;line-height:1.3;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .sku-card p{display:none}
+  .sku-actions{grid-template-columns:1fr !important;gap:6px}
+  .btn-quote,.btn-email{padding:8px 8px;font-size:.68rem;min-height:36px}
+  .cat-faq,.cat-browse{padding:32px 0 !important}
+  .faq-list{gap:10px}
+  .faq-card{padding:16px}
+  .site-footer{padding:36px 0 22px}
+  .sf-grid{grid-template-columns:1fr 1fr !important;gap:20px !important;padding-bottom:24px}
+  .sf-brand{grid-column:1 / -1}
+  .sf-bottom{padding-top:16px}
+  #location .reveal[style*="min-height: 350px"]{min-height:220px !important}
+  section#insights{padding:44px 14px !important}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://products.aouragrp.com/"}, {"@type": "ListItem", "position": 2, "name": "Copy Paper — A4, A3 & A5", "item": "https://products.aouragrp.com/products/copy-paper.html"}]}, {"@type": "ItemList", "name": "Copy Paper — A4, A3 & A5", "numberOfItems": 14, "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Thing", "name": "Double A Premium A3 80 GSM (1 Ream)", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B00OB6SJ5W.jpg"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Thing", "name": "Double A A3 Paper – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/DBL-A4-B5.jpg"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Thing", "name": "Double A A4 Paper – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/DBL-A4-B5-O.jpg"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Thing", "name": "HP Everyday A4 Printer Paper 75gsm – 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/HP-A4-5BX.jpg"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Thing", "name": "HP Everyday A4 Paper 75gsm – 1 Ream", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/HP-A4-5BX.jpg"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Thing", "name": "HP Everyday A4 Paper 75gsm – 5 Ream Carton", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B002VPD1AI.jpg"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Thing", "name": "HP Everyday A4 Paper 75gsm – 1 Ream (Variant)", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B00SPBH1A8.jpg"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Thing", "name": "ISOPACK A5 Copy Paper 80 GSM – 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0HRPJW86H.jpg"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Thing", "name": "ISOPACK A5 Copy Paper 80 GSM – 10 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0HRPWHY1Z.jpg"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Thing", "name": "ISOPACK A5 Copy Paper 80 GSM – 20 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0HRPML8JJ.jpg"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "Thing", "name": "JK Copier A3 Paper – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/JK-A3-B5.jpg"}}, {"@type": "ListItem", "position": 12, "item": {"@type": "Thing", "name": "JK Copier A4 80 GSM – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0CXXXSXPL.jpg"}}, {"@type": "ListItem", "position": 13, "item": {"@type": "Thing", "name": "OMNIA A3 Copy Paper 80 GSM – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0HBQ811HR.jpg"}}, {"@type": "ListItem", "position": 14, "item": {"@type": "Thing", "name": "MARAM Red A4 Copy Paper 80 GSM – Box of 5 Reams", "url": "https://products.aouragrp.com/products/copy-paper.html", "image": "https://products.aouragrp.com/images/B0FJRRQRNX.jpg"}}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which copy paper brands do you supply in Dubai & UAE?", "acceptedAnswer": {"@type": "Answer", "text": "We supply Double A (A4 & A3 80 GSM), HP Everyday (75 GSM), JK Copier (A4 & A3), OMNIA A3, ISOPACK A5, and MARAM Red A4 copy paper."}}, {"@type": "Question", "name": "Do you offer 5-ream, 10-ream, and bulk carton wholesale pricing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we supply both 5-ream boxes and bulk corporate pallets. Email customer@aouragrp.com for volume quotes."}}, {"@type": "Question", "name": "How fast is delivery for copy paper in Dubai and Sharjah?", "acceptedAnswer": {"@type": "Answer", "text": "Orders are dispatched from our Dubai (Deira) and Sharjah (Sajjah Industrial) warehouses for fast UAE-wide delivery."}}]}]}</script>
 <meta content="AE-DU" name="geo.region"/>

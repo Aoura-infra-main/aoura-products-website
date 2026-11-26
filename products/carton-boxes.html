@@ -121,6 +121,59 @@
 .faq-card{background:var(--grey-100);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
 .faq-card h3{font-family:var(--font-body);font-size:.98rem;font-weight:600;margin-bottom:8px;color:var(--black);line-height:1.4}
 .faq-card p{font-size:.86rem;color:var(--grey-600);line-height:1.65;margin:0}
+
+/* MOBILE-FIRST UNCLUTTERED UX */
+@media(max-width:768px){
+  html{font-size:15px}
+  :root{--section-pad:44px;--nav-h:58px}
+  .container{padding:0 14px}
+  .nav-wrap{top:10px}
+  .nav{width:calc(100% - 24px)}
+  .nav-inner{padding:0 14px}
+  .hero-bg-text{display:none !important}
+  #hero{min-height:auto !important;padding:calc(var(--nav-h) + 38px) 0 32px !important}
+  .hero-content{padding:0 14px !important;min-height:auto !important}
+  .hero-content h1{font-size:2.2rem !important;margin-bottom:10px}
+  .hero-sub{font-size:.76rem;letter-spacing:.08em;margin-bottom:0 !important}
+  #star-products{padding:36px 0 !important}
+  .sp-carousel .sp-card{flex:0 0 68%;min-width:200px;padding:14px !important}
+  .sp-carousel .sp-img-wrap{margin-bottom:10px}
+  .sp-carousel h3{font-size:.94rem}
+  .sp-action-btn{padding:8px 14px;font-size:.72rem;margin-top:10px}
+  /* 2-column compact category grid on mobile index */
+  #categories{padding:36px 0 !important}
+  #categories .container>div:last-child{grid-template-columns:1fr 1fr !important;gap:10px !important}
+  #categories .sp-card{padding:14px !important}
+  #categories .sp-card h3{font-size:.9rem;margin-bottom:6px}
+  #categories .sp-action-btn{padding:6px 10px;font-size:.66rem;margin-top:6px}
+  /* 2-column app-style product grid on category & all-products pages */
+  .cat-hero{padding:calc(var(--nav-h) + 32px) 0 24px !important}
+  .cat-hero h1{font-size:1.75rem !important;margin:8px 0}
+  .cat-hero .divider{margin:12px auto}
+  .cat-hero p.intro{font-size:.86rem;line-height:1.5}
+  .cat-contact-row{margin-top:14px;gap:6px}
+  .cat-chip{padding:7px 12px;font-size:.74rem}
+  .cat-controls{margin:18px 0 14px;padding-bottom:12px;gap:8px}
+  .cat-search{padding:10px 14px;font-size:.85rem}
+  .sku-grid,.stanley-grid{grid-template-columns:repeat(2,1fr) !important;gap:10px !important;padding-bottom:36px !important}
+  .sku-card{padding:12px !important;border-radius:10px}
+  .sku-card .sp-img-wrap{margin-bottom:10px;padding:4px}
+  .sku-meta{flex-direction:column;align-items:flex-start;gap:4px;margin-bottom:6px}
+  .sku-code{max-width:100%;font-size:.62rem}
+  .sku-card h2,.sku-card h3{font-size:.84rem;line-height:1.3;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .sku-card p{display:none}
+  .sku-actions{grid-template-columns:1fr !important;gap:6px}
+  .btn-quote,.btn-email{padding:8px 8px;font-size:.68rem;min-height:36px}
+  .cat-faq,.cat-browse{padding:32px 0 !important}
+  .faq-list{gap:10px}
+  .faq-card{padding:16px}
+  .site-footer{padding:36px 0 22px}
+  .sf-grid{grid-template-columns:1fr 1fr !important;gap:20px !important;padding-bottom:24px}
+  .sf-brand{grid-column:1 / -1}
+  .sf-bottom{padding-top:16px}
+  #location .reveal[style*="min-height: 350px"]{min-height:220px !important}
+  section#insights{padding:44px 14px !important}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://products.aouragrp.com/"}, {"@type": "ListItem", "position": 2, "name": "Carton & Gift Boxes", "item": "https://products.aouragrp.com/products/carton-boxes.html"}]}, {"@type": "ItemList", "name": "Carton & Gift Boxes", "numberOfItems": 13, "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Thing", "name": "AOURA 20×17×17CM Small Carton Boxes – Pack of 3", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/20x17x17CM%20%7C%203%20Pcs.jpg"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Thing", "name": "AOURA 31×23×25CM Carton Boxes – Pack of 3", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/B0GZF3JM5H.jpg"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Thing", "name": "AOURA 45×45×23CM Heavy Duty Carton Boxes – Pack of 3", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/B0GZF4XTMG.jpg"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Thing", "name": "AOURA 45×45×70CM Tall Carton Boxes – Pack of 3", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/45x45x70%20%7C%203%20Pcs.jpg"}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Thing", "name": "Boxes XXLarge (53x40x13) White", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/B0H72XF3KD.jpg"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Thing", "name": "AOURA 53x53x53CM Heavy Duty Carton Boxes – 3 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/53x53x53CM%20%7C%203%20Pcs.jpg"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Thing", "name": "AOURA 55×55×70CM Extra Large Carton Boxes – Pack of 3", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/55x55x70CM%20%7C%203%20Pcs.jpg"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "Thing", "name": "AOURA 45x45x45CM Heavy Duty Carton Boxes – 10 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/DBX-002.jpg"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "Thing", "name": "AOURA 60x50x40CM Heavy Duty Carton Boxes – 3 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/B0GSNYRPD7.jpg"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "Thing", "name": "AOURA 45x30x20CM Heavy Duty Carton Boxes – 5 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/DBX-1185.jpg"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "Thing", "name": "AOURA 40x34x33CM Heavy Duty Carton Boxes – 5 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/DBX-366.jpg"}}, {"@type": "ListItem", "position": 12, "item": {"@type": "Thing", "name": "AOURA 58x58x78CM Heavy Duty Carton Boxes – 5 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/DBX-995.jpg"}}, {"@type": "ListItem", "position": 13, "item": {"@type": "Thing", "name": "AOURA 65×40×35CM Heavy Duty Carton Boxes – 4 PCS", "url": "https://products.aouragrp.com/products/carton-boxes.html", "image": "https://products.aouragrp.com/images/I2-TO47-UAG6.jpg"}}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What carton box sizes do you stock in Dubai & Sharjah?", "acceptedAnswer": {"@type": "Answer", "text": "We stock heavy-duty corrugated carton boxes from 20×17×17 cm up to 65×40×35 cm and 58×58×78 cm in our Dubai and Sharjah warehouses."}}, {"@type": "Question", "name": "Can businesses order wholesale carton boxes in bulk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Email customer@aouragrp.com or click Enquire Now on any carton size for B2B wholesale pricing across the UAE. All emails are answered within 24 hours."}}, {"@type": "Question", "name": "Are these carton boxes suitable for Amazon FBA and Noon shipping?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, our corrugated cartons are heavy-duty single/double-wall shipping boxes designed for Amazon FBA, Noon, e-commerce, and commercial moving in the UAE."}}]}]}</script>
 <meta content="AE-DU" name="geo.region"/>
